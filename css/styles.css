@@ -85,14 +85,6 @@ label{
     line-height: 20px;
 }
 
-.label-big{
-    font-family: Montserrat;
-    font-style: normal;
-    color:#343434;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-}
 
 /* General*/
 img{
@@ -338,6 +330,17 @@ a.logo:hover{
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
+    color:#343434;
+}
+
+.label-big {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color:#343434;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
 }
 
 
