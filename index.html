@@ -28,7 +28,7 @@
 <body>
 	<!-- Header/Navigation -->
 	<header>
-		<div class="main-nav">
+		<div id="main-nav">
 			<a class="logo" href="index.html">Júlia Mari Bernaus</a>
 			<nav>
 				<ul>
@@ -47,15 +47,15 @@
 
 	<!-- Hero -->
 	<main>
-		<div class="container-hero">
+		<div id="hero">
 			<!--Open row that holds 2 columns-->
-			<picture class="pic-hero">
+			<picture class="hero-pic">
 				<!--Open Column Right -->
 				<source srcset="img/home/juliamaribernaus.png" media="(max-width:767px)"><img
 					src="img/home/juliamaribernaus.png" alt="Júlia Marí Bernaus">
 			</picture>
 			<!--end pic-->
-			<div class="intro-hero">
+			<div class="hero-cta">
 				<!--Open Column Left -->
 				<h1>Hi! I am <span style="color: #FFA7A7">Júlia</span>, a Berlin based <span
 						style="color: #0C0093;">UX/UI Designer</span> and former CEO at <span style="color: #FEED50"><a
@@ -68,171 +68,133 @@
 
 
 		<!-- Projects -->
-		<div class="container-work" id="work">
+		<section class="container-work" id="work"><!--Menu Link to Work goes here-->
 			<div>
 				<h3>Selected Projects</h3>
 			</div>
-			<div>
-				<!--Open Row that contains 2 columns x 2 rows -->
-				<div>
-					<!--Open Projects Row 1-->
-					<div class="project prj-1">
-						<!--Open Project 1-->
+			<div class="container-project">
+				<!--Open Projects Row 1-->
+				<div class="project prj-1">
+					<!--Open Project 1-->
+					<a href="linsenpate.html">
+						<picture>
+							<source srcset="img/home/linsenpate_328x242.png" media="(max-width:767px)">
+							<img src="img/home/linsenpate_640x471.png" alt="Linsenpate">
+						</picture>
+					</a>
+					<div class="project-content">
+						<!--open Project Content 1-->
 						<a href="linsenpate.html">
-							<picture>
-								<source srcset="img/home/linsenpate_328x242.png" media="(max-width:767px)">
-								<img src="img/home/linsenpate_640x471.png" alt="Linsenpate">
-							</picture>
+							<h2>Der Linsenpate</h2>
+							<h4>MisterSpex’s spin-off contactlenses e-commerce shop.</h4>
+							<label-big>2021</label-big>
+							<p class="label-role">UI Designer</p>
 						</a>
-						<div class="project-content">
-							<!--open Project Content 1-->
-							<a href="linsenpate.html">
-								<h2>Der Linsenpate</h2>
-								<h4>MisterSpex’s spin-off contactlenses e-commerce shop.</h4>
-								<label-big>2021</label-big>
-								<p class="label-role">UI Designer</p>
-							</a>
-						</div>
-						<!--end Project Content-->
-					</div>
-					<!--end Project 1-->
-
-
-					<div class="project prj-2">
-						<!--Open Project 2-->
-						<a href="setting.html" target="_self">
-							<picture>
-								<source srcset="img/home/setting_328x242.png" media="(max-width:767px)">
-								<img src="img/home/setting_640x471.png" alt="Linsenpate">
-							</picture>
+					</div><!--end Project Content-->
+				</div><!--end Project 1-->
+				<div class="project prj-2"><!--Open Project 2-->
+					<a href="setting.html" target="_self">
+						<picture>
+							<source srcset="img/home/setting_328x242.png" media="(max-width:767px)">
+							<img src="img/home/setting_640x471.png" alt="Linsenpate">
+						</picture>
+					</a>
+					<div class="project-content">
+						<!--open Project Content 2-->
+						<a href="setting.html">
+							<h2>Setting</h2>
+							<h4>Setting is an online marketplace for offices in Berlin.</h4>
+							<label-big>2020-2021</label-big>
+							<p class="label-role">UX/UI Designer</p>
 						</a>
-						<div class="project-content">
-							<!--open Project Content 2-->
-							<a href="setting.html">
-								<h2>Setting</h2>
-								<h4>Setting is a Marketplace for offices in Berlin.</h4>
-								<label-big>2020-2021</label-big>
-								<p class="label-role">UX/UI Designer</p>
-							</a>
-						</div>
-						<!--end Project Content 2-->
-					</div>
-					<!--end Project 2-->
-				</div>
-				<!--End Projects Row 1-->
-				<div>
-					<!--Open Projects Row 2-->
-					<div class="project prj-3">
-						<!--Open Project 3-->
+					</div><!--end Project Content 2-->
+				</div><!--end Project 2-->
+				<div class="project prj-3"><!--Open Project 3-->
+					<a href="shore.html">
+						<picture>
+							<source srcset="img/home/shore_328x242.png" media="(max-width:767px)">
+							<img src="img/home/shore_640x471.png" alt="Linsenpate">
+						</picture>
+					</a>
+					<div class="project-content"><!--open Project Content 3-->
 						<a href="shore.html">
-							<picture>
-								<source srcset="img/home/shore_328x242.png" media="(max-width:767px)">
-								<img src="img/home/shore_640x471.png" alt="Linsenpate">
-							</picture>
+							<h2>Shore</h2>
+							<h4>App case study for non-professional watersports aficionados.</h4>
+							<label-big>2020</label-big>
+							<p class="label-role">UX/UI Designer</p>
 						</a>
-						<div class="project-content">
-							<!--open Project Content 3-->
-							<a href="shore.html">
-								<h2>Shore</h2>
-								<h4>App case study for non-professional watersports aficionados.</h4>
-								<label-big>2020</label-big>
-								<p class="label-role">UX/UI Designer</p>
-							</a>
-						</div>
-						<!--end Project Content 3-->
-					</div>
-					<!--end Project 3-->
-
-					<div class="project prj-4">
-						<!--Open Project 4-->
+					</div><!--end Project Content 3-->
+				</div><!--end Project 3-->
+				<div class="project prj-4"><!--Open Project 4-->
+					<a href="shore.html">
+						<picture>
+							<source srcset="img/home/artconnect_328x242.png" media="(max-width:767px)">
+							<img src="img/home/artconnect_640x471.png" alt="Linsenpate">
+						</picture>
+					</a>
+					<div class="project-content">
 						<a href="shore.html">
-							<picture>
-								<source srcset="img/home/artconnect_328x242.png" media="(max-width:767px)">
-								<img src="img/home/artconnect_640x471.png" alt="Linsenpate">
-							</picture>
+							<h2>Artconnect</h2>
+							<h4>Artconnect is a global social network for creatives.</h4>
+							<label-big>2011-2020</label-big>
+							<p class="label-role">Founder, Product Manager, UX/UI Design</p>
 						</a>
-						<div class="project-content">
-							<a href="shore.html">
-								<h2>Artconnect</h2>
-								<h4>Artconnect is a global social network for creatives.</h4>
-								<label-big>2011-2020</label-big>
-								<p class="label-role">Founder, Product Manager, UX/UI Design</p>
-							</a>
-						</div>
-						<!--end Project Content 4-->
-					</div>
-					<!--end Project 4-->
-				</div>
-				<!--End Projects Row 1-->
+					</div><!--end Project Content 4-->
+				</div><!--end Project 4-->
 			</div>
-			<!--End Row that contains 2 columns x 2 rows -->
-		</div>
+		</section>
 		<!--end work-->
 		<!-- About -->
-		<div class="container-about" id="about">
-			<div>
-				<h3>About</h3>
-			</div>
-			<div>
-				<p>
-					<!--open paragraph-->
-					I am a Berlin-based UX/UI Developer and former founder of Artconnect.com, the largest online
-					creative community in
-					Berlin with 35k monthly active users. In 2020, I sold my venture and embarked on my true passion:
-					UX, UI Design and
-					Front-end development.
+		<section class="container-about" id="about">
+			<h3>About</h3>
+			<p><!--open paragraph-->
+				I am a Berlin-based UX/UI Developer and former founder of Artconnect.com, the largest online
+				creative community in
+				Berlin with 35k monthly active users. In 2020, I sold my venture and embarked on my true passion:
+				UX, UI Design and
+				Front-end development.
+			</p><!--end paragraph-->
+			<p><!--open paragraph-->
+				I am currently working as a UX Design tutor at CareerFoundry and freelancing for companies such as
+				Mister Spex,
+				Setting.io, Duxer (Ikea, Userzoom), and creating a product from scratch with KEA. On the side, I
+				organize
+				Design+Friends, a monthly Berlin Designer meetup.
+			</p><!--end paragraph-->
+			<a class="btn btn-primary" href="#" role="button">Learn more about me</a>			
+		</section><!--end home-about-->
+
+		<section id="recommendation"><!--Open Recommendations-->
+			<h3>What others say about me</h3>
+			<div class="container-slides">
+				<div class="slide">
+					<p>Super project, excellent work! On-time and above scope! 👍  
+					<br>Júlia very quickly and independently got to grips with the
+					brand, the target audience and the product. Besides her skills in UX/UI design - already praised by others here - I
+					would also like to highlight her linguistic sensitivity. She not only understands many languages, but also knows how to
+					implement language for good UX. We would use Júlia's support and expertise again anytime - highly recommended!
 				</p>
-				<!--end paragraph-->
-				<p>
-					<!--open paragraph-->
-					I am currently working as a UX Design tutor at CareerFoundry and freelancing for companies such as
-					Mister Spex,
-					Setting.io, Duxer (Ikea, Userzoom), and creating a product from scratch with KEA. On the side, I
-					organize
-					Design+Friends, a monthly Berlin Designer meetup.
-				</p>
-				<!--end paragraph-->
-				<div>
-					<a class="btn btn-primary about-button" href="about.html" role="button">Learn more about me</a>
+				<h4>Alexander Ständert</h4>
+				<h5>Product Owner at Mister Spex</h5>
 				</div>
 			</div>
-		</div>
-		<!--end home-about-->
+		</section><!--End Recommendations-->
 	</main>
 
 	<!-- Footer  -->
 	<footer>
-
-		<!--Contact-->
-		<div class="container-contact" id="contact">
-			<div class="contact-wrapper">
+		<section class="container-contact" id="contact"><!--Open Contact-->
 				<h3>Did you like my work?</h3>
-				<div class="contact-buttons-table">
-					<ul id="contact-buttons-list">
-						<li><a class="btn btn-primary contact-button" href="mailto:hi@juliamaribernaus.com"
-								target="_blank" role="button">Shoot me an email</a></li>
-						<li><a class="btn btn-secondary contact-button"
-								href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank"
-								role="button">Connect
-								on LinkedIn</a></li>
-					</ul>
+				<div>
+					<a class="btn btn-primary contact-button" href="mailto:hi@juliamaribernaus.com" target="_blank" role="button">Shoot me an email</a>
+					<a class="btn btn-secondary contact-button" href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank" role="button">Connect on LinkedIn</a>
 				</div>
-			</div>
-		</div>
-		<!--end of contact-->
+		</section><!--end of contact-->
 
-		<div class="footer">
-			<div class="footer-table">
-				<ul id="footer-list">
-					<li>
-						<h6>©2021 All rights reserved</h6>
-					</li>
-					<li><a href="imprint.html" target="_blank">
-							<h6>Imprint</h6>
-						</a></li>
-				</ul>
-			</div>
-		</div>
+		<div class="imprint"><!--Open Imprint-->
+				<h6>©2021 All rights reserved</h6>
+				<a href="imprint.html" target="_blank"><h6>Imprint</h6></a>
+		</div><!--End Imprint-->
 	</footer>
 	<!--end of footer-->
 </body>
