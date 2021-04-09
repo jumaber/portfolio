@@ -8,27 +8,30 @@ Grey bg: #F8F8F8;
 
 /*********** Linsenpate Intro **********/
 
+#lp-intro{
+    margin-top: 150px;
+}
 
 .lp-intro-flex-grid{
-    padding-bottom: 5%;
-    margin-top: 10em; 
+    padding-bottom: 6%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 6em;
 }
 
-.lp-intro-box{
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-}
 .lp-intro-left{
-    max-width: 42%;
+    flex-grow: 3;     
+    flex-basis: 45%;
     min-width: 320px;
+    padding-right: 5%;
  }
 
 .lp-intro-right{
-    max-width: 58%;
+    flex-grow: 1;
+    flex-basis: 55%;
     min-width: 320px;
 }
 
@@ -54,8 +57,9 @@ Grey bg: #F8F8F8;
 /*********** Linsenpate Challenge **********/
 
 #challenge{
-    margin-top: 10em;
-    margin-bottom: 5em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #F8F8F8;
 }
 
 .table-flex-grid{
@@ -97,6 +101,7 @@ li p{
 .lp-hero{
     width:100%;
 }
+
 /********* Linsenpate Project Description *********/
 
 
@@ -107,30 +112,26 @@ li p{
 .prj-flex-grid{
     display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 5%;
     margin-top: 6em;
 }
 
-.prj-box{
-    width: 100%;
-
-}
-
 .prj-left-col{
-    width: 30%;
+    flex-grow: 3;     
+    flex-basis: 45%;
     min-width: 320px;
+    padding-right: 5%;
 }
 
 .prj-right-col{
-    width: 60%;
+    flex-grow: 1;
+    flex-basis: 55%;
     min-width: 320px;
 }
 
 .prj-left-col-2{
     margin-top: 48px;
-    margin-bottom: 48px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -141,10 +142,13 @@ li p{
     margin-right: 35%;
 }
 
+.prj-goal{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 .prj-goal ul li{
     list-style-type:disc;
-    margin-left:-20px;
-    
+    margin-left:-20px; 
 }
 
 /********** Linsenpate Mockups **********/
@@ -164,15 +168,14 @@ li p{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width:100%;
 }
 .mockup1{
-    width: 200px;
+    flex: 0 1 25%;
     min-width: 320px;
 }
 
 .mockup2{
-    width: 600px;
+    flex: 1 1 50%;
     min-width: 320px;  
 }
 
@@ -193,7 +196,7 @@ li p{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    flex: 1 1 50%;
     min-width: 320px;
 }
 
@@ -213,7 +216,7 @@ li p{
 
 .ds-group{
     margin-top: 50px;
-    margin-bottom:150px;
+    margin-bottom:100px;
 }
 .colors-flex-grid{
     display: flex;
@@ -221,9 +224,13 @@ li p{
     align-content: flex-start;
     align-items: flex-start;
     flex-flow: row wrap;
-    padding-right: 10%;
+    padding-right: 5%;
     padding-bottom: 5%;
 }
+.colors-flex-grid picture{
+    flex: 0 1 20%;
+}
+
 
 .h3-typo{
     color: #BDBDBD!important;
@@ -245,6 +252,7 @@ li p{
     padding-bottom: 5%;
 }
 .typo{
+    flex: 1 1 auto;
     padding-right: 4em;
 }
 
