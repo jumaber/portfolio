@@ -180,6 +180,10 @@ img{
     border-width: 2px;
 }
 
+.btn:active{
+    background-color: #FDFF92;
+}
+
 .btn-outline-secondary {
     color: white;
     background-color: #0C0093;
