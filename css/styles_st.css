@@ -17,18 +17,18 @@ Grey bg: #F8F8F8;
 .st-intro-flex-grid{
     padding-bottom: 6%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     margin-top: 6em;
+    align-content: space-between;
 }
 
 .st-intro-left{
     flex-grow: 1;     
     flex-basis: 58%;
     min-width: 320px;
-    padding-right: 5%;
  }
 
 .st-intro-right{
