@@ -10,8 +10,7 @@
 	<title>Júlia Marí Bernaus | About</title>
 
 	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
 	<!-- Custom styles for this template go here -->
 	<link rel="stylesheet" href="css/normalize.css#">
@@ -32,10 +31,10 @@
 			<a class="logo" href="index.html">Júlia Mari Bernaus</a>
 			<nav>
 				<ul>
-					<li><a class="top-nav" href="index.html#work">Work</a></li>
-					<li><a class="top-nav" href="index.html#about">About</a></li>
-					<li><a class="top-nav" href="index.html#contact">Contact</a></li>
-					<li><a class="top-nav" href="https://www.linkedin.com/in/juliamaribernaus/"
+					<li><a class="top-nav d-none d-md-block" href="index.html#work">Work</a></li>
+					<li><a class="top-nav d-none d-md-block" href="index.html#about">About</a></li>
+					<li><a class="top-nav d-none d-md-block" href="index.html#contact">Contact</a></li>
+					<li><a class="top-nav d-none d-md-block" href="https://www.linkedin.com/in/juliamaribernaus/"
 							target="_blank">LinkedIn</a></li>
 					<li><a class="btn-nav btn-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
 							role="button">Get in touch</a></li>
@@ -46,10 +45,10 @@
 	</header>
 
 	<!-- Hero -->
-	<main>
-		<div id="hero">
+	<main class="page-main">
+		<div id="hero" class="container">
 			<!--Open row that holds 2 columns-->
-			<picture class="hero-pic">
+			<picture class="d-none d-md-block hero-pic">
 				<!--Open Column Right -->
 				<source srcset="img/home/juliamaribernaus.png" media="(max-width:767px)"><img
 					src="img/home/juliamaribernaus.png" alt="Júlia Marí Bernaus">
@@ -57,9 +56,7 @@
 			<!--end pic-->
 			<div class="hero-cta">
 				<!--Open Column Left -->
-				<h1>Hi! I am <span style="color: #FFA7A7">Júlia</span>, a Berlin based <span
-						style="color: #0C0093;">UX/UI Designer</span> and former CEO at <span style="color: #FEED50"><a
-							href="https://www.artconnect.com" target="_blank"></a>Artconnect</span>.</h1>
+				<h1>Hi! I am <span style="color: #FFA7A7">Júlia</span>, a Berlin based <span style="color: #0C0093;"> UX/UI Designer</span> and former CEO at <span style="color: #FEED50"><a href="https://www.artconnect.com" target="_blank"></a>Artconnect</span>.</h1>
 				<a class="btn btn-primary" href="#work" role="button">Check my work</a>
 			</div>
 			<!--end intro-->
@@ -72,9 +69,9 @@
 			<div>
 				<h3>Selected Projects</h3>
 			</div>
-			<div class="container-project">
-				<!--Open Projects Row 1-->
-				<div class="project prj-1">
+			<div class="projects-box">
+				<!--Open Projects Box-->
+				<div class="project">
 					<!--Open Project 1-->
 					<a href="linsenpate.html">
 						<picture>
@@ -84,16 +81,15 @@
 					</a>
 					<div class="project-content">
 						<!--open Project Content 1-->
-						<a href="linsenpate.html">
-							<h2>Der Linsenpate</h2>
-							<h4>MisterSpex’s spin-off contactlenses e-commerce shop.</h4>
+							<h2><a href="linsenpate.html">Der Linsenpate</a></h2>
+							<p>MisterSpex’s spin-off contactlenses e-commerce shop.</p>
 							<p class="label-big">2021</p>
 							<p class="label-role">UI Designer</p>
 						</a>
 					</div><!--end Project Content-->
 				</div><!--end Project 1-->
-				<div class="project prj-2"><!--Open Project 2-->
-					<a href="setting.html" target="_self">
+				<div class="project"><!--Open Project 2-->
+					<a href="setting.html">
 						<picture>
 							<source srcset="img/home/setting_328x242.png" media="(max-width:767px)">
 							<img src="img/home/setting_640x471.png" alt="Linsenpate">
@@ -101,15 +97,14 @@
 					</a>
 					<div class="project-content">
 						<!--open Project Content 2-->
-						<a href="setting.html">
-							<h2>Setting</h2>
-							<h4>Setting is an online marketplace for offices in Berlin.</h4>
+							<h2><a href="setting.html">Setting</a></h2>
+							<p>Setting is an online marketplace for offices in Berlin.</p>
 							<p class="label-big">2020-2021</p>
 							<p class="label-role">UX/UI Designer</p>
 						</a>
 					</div><!--end Project Content 2-->
 				</div><!--end Project 2-->
-				<div class="project prj-3"><!--Open Project 3-->
+				<div class="project"><!--Open Project 3-->
 					<a href="shore.html">
 						<picture>
 							<source srcset="img/home/shore_328x242.png" media="(max-width:767px)">
@@ -117,15 +112,14 @@
 						</picture>
 					</a>
 					<div class="project-content"><!--open Project Content 3-->
-						<a href="shore.html">
-							<h2>Shore</h2>
-							<h4>App case study for non-professional watersports aficionados.</h4>
+							<h2><a href="shore.html">Shore</h2></a>
+							<p>App case study for non-professional watersports aficionados.</p>
 							<p class="label-big">2020</p>
 							<p class="label-role">UX/UI Designer</p>
 						</a>
 					</div><!--end Project Content 3-->
 				</div><!--end Project 3-->
-				<div class="project prj-4"><!--Open Project 4-->
+				<div class="project"><!--Open Project 4-->
 					<a href="shore.html">
 						<picture>
 							<source srcset="img/home/artconnect_328x242.png" media="(max-width:767px)">
@@ -133,9 +127,8 @@
 						</picture>
 					</a>
 					<div class="project-content">
-						<a href="shore.html">
-							<h2>Artconnect</h2>
-							<h4>Artconnect is a global social network for creatives.</h4>
+							<h2><a href="shore.html">Artconnect</a></h2>
+							<p>Artconnect is a global social network for creatives.</p>
 							<p class="label-big">2011-2020</p>
 							<p class="label-role">Founder, Product Manager, UX/UI Design</p>
 						</a>
@@ -183,11 +176,13 @@
 
 	<!-- Footer  -->
 	<footer>
-		<section class="container-contact" id="contact"><!--Open Contact-->
+		<section id="contact"><!--Open Contact-->
 				<h3>Did you like my work?</h3>
-				<div>
-					<a class="btn btn-primary contact-button" href="mailto:hi@juliamaribernaus.com" target="_blank" role="button">Shoot me an email</a>
-					<a class="btn btn-secondary contact-button" href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank" role="button">Connect on LinkedIn</a>
+				<div class="contact-button-wrapper">
+					<a class="btn btn-primary contact-button left" href="mailto:hi@juliamaribernaus.com" target="_blank"
+						role="button">Shoot me an email</a>
+					<a class="btn btn-secondary contact-button right" href="https://www.linkedin.com/in/juliamaribernaus/"
+							target="_blank" role="button">Connect on LinkedIn</a>
 				</div>
 		</section><!--end of contact-->
 

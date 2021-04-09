@@ -2,11 +2,16 @@
 Primary Color: #0C0093;
 Secondary Color: #FDFF92;
 Text color: #343434;
+Background: #F8F8F8;
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700,400&family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
 
-/*Typography*/
+/********** Typography **********/
+
+html{
+    font-size: 100%;
+}
 
 h1, h2, h3, h4, h5, h6, .label-bold, a.logo{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -27,82 +32,107 @@ h1{
 
 h2{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875rem; /*30px*/
     line-height: 37px;
 }
 
 h3{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem; /*24px*/
     line-height: 29px;
 }
 
 h4{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem; /*18px*/
     line-height: 22px;
 }
 
 h5{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem; /*16px*/
     line-height: 20px;
 }
 
 h6{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px; */
     line-height: 17px;
 }
 
 p{
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.125rem; /*18px;*/
     line-height: 30px;
 }
 
 .p-link{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem; /*18px;*/
     line-height: 30px;
 }
 
 .p-small{
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem; /*16px*/
     line-height: 22px;
 }
 
 label{
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.875rem; /*14px;*/
     line-height: 19px;
 }
 
 .label-bold{
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem; /*16px*/
     line-height: 20px;
 }
 
+a{
+    color:#0C0093;
+}
 
-/* General*/
+a:hover{
+    text-decoration: none;
+    color:#FFA7A7;
+}
+
+a.text {
+    text-decoration: underline;
+    color:#0C0093;
+    font-weight: bold;
+}
+a.text:hover, a.text:focus{
+    color:#FFA7A7;
+}
+
+a.text:visited{
+    color: #FFA7A7;
+}
+a.text:active{
+    color:#FFA7A7;
+
+}
+
+
+/********** General **********/
 img{
     width:100%;
 }
 
-/*a{}
-a:visited{}
-a:active{}
-a:hover, a:focus{}
+* {
+  box-sizing: border-box;
+}
 
 .container{
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
 }
-*/
 
-/* Buttons */
+
+/********** Buttons **********/
 
 .btn-nav {
     display: inline-block;
@@ -116,7 +146,6 @@ a:hover, a:focus{}
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 1.875rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn {
@@ -130,12 +159,11 @@ a:hover, a:focus{}
     font-size: 1.125rem;
     line-height: 1.5;
     border-radius: 1.875rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    width: 328px;
+    max-width: 328px;
     height: 54px;
     justify-content: center;
     align-items: center;
-    padding: 15px 5%;
+    padding: 1rem 2rem;
     background: #0C0093;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -189,7 +217,7 @@ a:hover, a:focus{}
     border-width: 2px;
 }
 
-/* Top Navigation Bar */
+/********** Top Navigation Bar **********/
 
 #main-nav{
     background-color: #0C0093;
@@ -197,6 +225,8 @@ a:hover, a:focus{}
     height: 60px;
     width: 100%;
     position: fixed;
+    top:0;
+    z-index:1
 }
 
 nav{
@@ -244,7 +274,7 @@ a.logo:hover{
 }
 
 
-/* Home Hero */
+/********** Home Hero **********/
 
 #hero{
     display: flex;
@@ -253,28 +283,32 @@ a.logo:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-left:20%;
-    padding-right: 20%;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 5%;
 }
 
 .hero-pic{
     flex-basis: 50%;
     align-items: center;
+    
 }
 
 .hero-cta{
     flex-basis: 50%;
     text-align: center;
-}
+    max-width: 380px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}   
 
-/* Projects */
+/********** Projects **********/
 
-.container-work h3, .container-about h3, .container-contact h3, .container-contact-about h3, .slides-wrapper h3, #recommendation h3{
+.container-work h3, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3{
     text-align: center;
     padding-top: 5%;
     padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .container-work {
@@ -284,7 +318,7 @@ a.logo:hover{
     width: 100%;
 }
 
-.container-project{
+.projects-box{
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -305,18 +339,17 @@ a.logo:hover{
     margin-bottom:1%;
     margin-right: 1%;
     margin-left: 1%;
-    align-items: center;
-    flex-basis: auto;
-    flex-shrink: 2;
+    width: 45%;
+    min-width: 320px;
 }
+   
+
 
 .project:hover img{
     opacity: 0.8;
     background-color:#F8F8F8;
 
 }
-
-/*.prj-1, .prj-3, .prj-2, .prj-4{}*/
 
 .project-content{
     margin-top: 24px;
@@ -344,7 +377,7 @@ a.logo:hover{
 }
 
 
-/* About */
+/********** About **********/
 
 .container-about{
     background-color: white;
@@ -365,11 +398,13 @@ a.logo:hover{
     padding-right: 5%;
 }
 
-/* Recommendation */
+/********** Recommendations **********/
 
 #recommendation {
     background-color: #F8F8F8;
     padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 
 }
 
@@ -378,10 +413,14 @@ a.logo:hover{
     border-radius: 10px;
     margin-top: 0;
     margin-bottom: 5%;
-    max-width: 1000px;
-    padding: 3%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1000px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .slides-wrapper{
@@ -393,28 +432,27 @@ a.logo:hover{
 }
 
 
-/* Contact in Footer */
+/********** Contact in Footer **********/
 
-.container-contact{
+#contact{
     background-color: white;
-    width: 100%;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding-left: 25%;
-    padding-right: 25%;
 }
 
 .contact-button{
     margin: 12px;
 }
 
+.contact-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 50%;
+}    
 
-/* Footer */
+/********** Footer **********/
 
 
 .imprint{
@@ -436,25 +474,3 @@ a.logo:hover{
     padding-left: 16px;
 }
 
-/* Linsenpate */
-.project-page{
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
-    width: 40%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.lp-column-right{
-    width: 40%;
-    align-items: center;
-}
-.lp-column-right{
-    width: 40%;
-    align-items: center;
-}

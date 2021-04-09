@@ -16,6 +16,8 @@
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" href="css/normalize.css#">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_lp.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,11 +33,11 @@
             <a class="logo" href="index.html">Júlia Mari Bernaus</a>
             <nav>
                 <ul>
-                    <li><a class="top-nav" href="index.html#work">Work</a></li>
-                    <li><a class="top-nav" href="index.html#about">About</a></li>
-                    <li><a class="top-nav" href="index.html#contact">Contact</a></li>
-                    <li><a class="top-nav" href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank">LinkedIn</a>
-                    </li>
+                    <li><a class="top-nav d-none d-md-block" href="index.html#work">Work</a></li>
+                    <li><a class="top-nav d-none d-md-block" href="index.html#about">About</a></li>
+                    <li><a class="top-nav d-none d-md-block" href="index.html#contact">Contact</a></li>
+                    <li><a class="top-nav d-none d-md-block" href="https://www.linkedin.com/in/juliamaribernaus/"
+                            target="_blank">LinkedIn</a></li>
                     <li><a class="btn-nav btn-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
                             role="button">Get in touch</a></li>
                 </ul>
@@ -46,77 +48,70 @@
 
     <!-- Hero -->
     <main>
-        <section id="project-page"><!--Open Intro-->
-            <div class="lp-column-left"><!--Open Right Column-->
-                <h2>Der Linsenpate</h2>
-                    <div><!--Open Text on Right Column-->
-                        <p>
-                        In January 2021, Mister Spex, one of the leading e-commerce eyewear platforms in Europe, contacted me to redesign
-                        Linsenpate.de, one of their contact lenses e-commerce shop.
-                        
-                        Working directly with Mister Spex’s team, my goal was to merge Linsenpate’s old brand with the Shopify-based Information
-                        Architecture of Lensit.no, and a contemporary UI twist.
-                        
-                        Within 12 days I had completed pixel-perfect wireframes of an entire e-commerce shop, as well a design system and emails
-                        and newsletters for the marketing department.
-                        
-                        Check out Linsenpate’s transformation further down the page.
-                        </p>
-                    </div>  <!--End Text on Right Column-->
-                    <div class="project-cta"> <!--Open CTAs on Right Column-->
-                        <a class="btn btn-primary project-cta" href="#" target="_blank" role="button">Keep on reading</a>
-                        <a class="btn btn-secondary project-cta" href="https://linsenpate.de" target="_blank" role="button">Visit linsenpate.de</a>
-                    </div>  <!--End CTAs on Right Column-->
+        <section id="lp-intro" class="lp-intro-flex-grid container"><!--Open Intro--> 
+            <div class="lp-intro-box">
+                <div class="lp-intro-left"><!--Open Right Column-->
+                    <h2>Der Linsenpate</h2>
+                        <div><!--Open Text on Right Column-->
+                            <p>
+                            In January 2021, Mister Spex, one of the leading e-commerce eyewear platforms in Europe, contacted me to redesign
+                            Linsenpate.de, one of their contact lenses e-commerce shop.</p>
+                            
+                            <p>Working directly with Mister Spex’s team, my goal was to merge Linsenpate’s old brand with the Shopify-based Information
+                            Architecture of Lensit.no, and a contemporary UI twist.</p>
+                            
+                            <p>Within 12 days I had completed pixel-perfect wireframes of an entire e-commerce shop, as well a design system and emails
+                            and newsletters for the marketing department.</p>
+                            
+                            <p>Check out Linsenpate’s transformation further down the page.</p>
+                        </div>  <!--End Text on Right Column-->
+                        <div class="project-cta"> <!--Open CTAs on Right Column-->
+                            <a class="btn btn-primary" href="#" target="_blank" role="button">Keep on reading</a>
+                            <a class="btn btn-secondary" href="https://linsenpate.de" target="_blank" role="button">Visit linsenpate.de</a>
+                        </div>  <!--End CTAs on Right Column-->
                 </div> <!--Close right column-->
-            <div><!--Open Left Column-->
-                <picture class="lp-column-right">
-                    <source srcset="img/linsenpate/linsenpate_mobile.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_desktop.png" alt="Setting Design by Júlia Marí Bernaus">
-                </picture>  
-            </div><!--Close Left Column-->
+                <div class="lp-intro-right"> <!--Open Left Column-->
+                    <picture>
+                        <source srcset="img/linsenpate/linsenpate_mobile.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_desktop.png" alt="Setting Design by Júlia Marí Bernaus">
+                    </picture>  
+                </div><!--Close Left Column--><!--Close Row-->
+            </div>
         </section>  <!--Close Intro Section-->
 
-        <section> <!--Open The Challenge-->
+        <section id="challenge" class="container"> <!--Open The Challenge-->
             <div><!--Open Challenge Header-->
                 <h3>The Challenge</h3>
                 <p>How can I...</p>
-                <div>
-                    <ul>
-                        <!--Open Challenge numbers-->
-                        <li>01</li>
-                        <li>Keep the same brand feeling with a new UI and Information Architecture?</li>
+               <div class="table-flex-grid"><!--Open Challenge numbers-->
+                    <ul class="table-item">
+                        <li class="nr">01</li>
+                        <li><p>Keep the same brand feeling with a new UI and Information Architecture?</p></li>
                     </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>02</li>
-                        <li>Help users to easily find what they are looking for, despite the new UI and IA?</li>
+                    <ul class="table-item">
+                        <li class="nr">02</li>
+                        <li><p>Help users to easily find what they are looking for, despite the new UI and IA?</p></li>
                     </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>03</li>
-                        <li>Adapt the IA of lensit.no to the german market?</li>
+                    <ul class="table-item">
+                        <li class="nr">03</li>
+                        <li><p>Adapt the IA of lensit.no to the german market?</p></li>
                     </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>04</li>
-                        <li>Introduce Italian in a German website, so that it’s understood and yet feels authentic?</li>
+                    <ul class="table-item">
+                        <li class="nr">04</li>
+                        <li><p>Introduce Italian in a German website, so that it’s understood and yet feels authentic?</p></li>
                     </ul>
-                </div>
-                <!--Close Challenge Numbers-->
-            </div>
-            <!--End Challenge Header-->
+                </div> <!--Close Challenge Numbers-->
+            </div><!--End Challenge Header-->
         </section>
         <!--End The Challenge-->
-        <picture><!--Open Hero Image-->
-            <source srcset="img/linsenpate/linsenpate_hero_mobile.png" media="(max-width:767px)"><img
-                src="img/linsenpate/linsenpate_hero_desktop.png" alt="Linsenpate Design by Júlia Marí Bernaus">
-        </picture>
+        <div class="lp-hero">
+            <picture><!--Open Hero Image-->
+            <source srcset="img/linsenpate/linsenpate_hero_mobile.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_hero_desktop.png" alt="Linsenpate Design by Júlia Marí Bernaus">
+            </picture>
+        </div>
         <!--End Hero Image-->
-        <section>
+        <section id="prj-description" class="prj-flex-grid container">
             <!--Open Project Description-->
-            <div>
+            <div class="prj-left-col">
                 <!--Open Left Column-->
                 <div>
                     <h3>About Der Linsenpate</h3>
@@ -124,206 +119,170 @@
                     behind the Patenfamilie, which gives the brand charm and creates curiosity. They keep low prices, fast deliveries and
                     safe shopping. From 2021, they also offer a contemporary UI and a user friendly UX.</p>
                 </div>
-                <div>   
-                    <ul>
-                        <li>
-                            <h3>My Role</h3>
-                            <p>UI Designer<br>
-                            UX Writer</p>
-                        </li>
-                        <li>
-                            <h3>Tools</h3>
-                            <p>Figma<br>
-                            Photoshop<br>
-                            </p>
-                        </li>
-                    </ul>
+                <div class="prj-left-col-2">   
+                    <div class="prj-left-col-2-left">
+                        <h3>My Role</h3>
+                        <p>UI Designer<br>
+                        UX Writer</p>
+                    </div>
+                    <div>   
+                        <h3>Tools</h3>
+                        <p>Figma<br>
+                        Photoshop<br>
+                        </p>
+                    </div>
                 </div>
-                <div>
+                <div class="prj-goal">
                     <h3>Goal</h3>
                     <p>To redesign linsenpate.de while:</p>
                     <ul>
-                        <li>Keeping the brand and website feeling</li>
-                        <li>Using the website structure of <a href="https://lensit.de" target="_blank">lensit.no</a></li>
-                        <li>Adapting the website structure to the german market</li>
-                        <li>Adapting the check-out-flow to shopify</li>
-                        <li>Merging German with Italian, to keep the story behind the brand</li>
+                        <li><p>Keeping the brand and website feeling</p></li>
+                        <li><p>Using the website structure of <a class="text"href="https://lensit.de" target="_blank">lensit.no</a></p></li>
+                        <li><p>Adapting the website structure to the german market</p></li>
+                        <li><p>Adapting the check-out-flow to shopify</p></li>
+                        <li><p>Merging German with Italian, to keep the story behind the brand</p></li>
                     </ul>
                 </div>
             </div><!--End Left Column-->
-            <div>
+            <div class="prj-right-col">
                 <!--Open Right Column-->
                 <h3>The Process</h3>
                 <p>After a short introduction by the Product of Ecommerce at MisterSpex, I began exploring the existing website,
-                <a href="https://linsenpate.de" target="_blank">linsenpate.de</a>, and the IA reference website, <a href="https://lensit.de" target="_blank">lensit.no</a>. A few days after I was given access to the design material of
-                Lensit and I learned about the design patterns used.
+                <a class="text" href="https://linsenpate.de" target="_blank">linsenpate.de</a>, and the IA reference website, <a class="text" href="https://lensit.de" target="_blank">lensit.no</a>. A few days after I was given access to the design material of
+                Lensit and I learned about the design patterns used.</p>
                 
-                Since I had such a good reference, I only needed to apply an aesthetic UI to the structure provided. With a mobile-first
-                approach, I created 4 different high-fidelity designs for mobile and desktop.
+                <p>Since I had such a good reference, I only needed to apply an aesthetic UI to the structure provided. With a mobile-first
+                approach, I created 4 different high-fidelity designs for mobile and desktop.</p>
                 
-                At the end of every working day, I would send an Email to the Product Owner highlighting what I had achieved and my
+                <p>At the end of every working day, I would send an Email to the Product Owner highlighting what I had achieved and my
                 questions. It was useful so that in our daily 30-minute standup we could resolve doubts and make decisions quickly.
                 During these meetings, I was given a lot of research insights that supported my decisions and helped me adapt the
                 product to the German market. After the screens were designed, we would receive feedback from the Marketing Department
-                and adapt according to their needs.
+                and adapt according to their needs.</p>
                 
-                The second phase was creating the emails and marketing newsletters. Taking Mister Spex’s email content as a reference,
+                <p>The second phase was creating the emails and marketing newsletters. Taking Mister Spex’s email content as a reference,
                 which had already been extensively tested and optimized, I applied the new UI to them. I also used my language skills to
-                emphasize the brand, by introducing Italian words in a way that could be understood by Germans.
+                emphasize the brand, by introducing Italian words in a way that could be understood by Germans.</p>
                 
-                Finally, I proceeded to put together a design system and a components page for <a href="https://www.misterspex.de/" target="_blank">Mister Spex’s</a> designers to use as a
-                reference in the future.
-            </p>
+                <p>Finally, I proceeded to put together a design system and a components page for <a class="text" href="https://www.misterspex.de/" target="_blank">Mister Spex’s</a> designers to use as a
+                reference in the future.</p>
             </div>
             <!--End of Right Column-->
         </section>
-        <div><!--Open Before & After Section-->
-            <div><!--Open New Design-->
-               <ul>
-                   <li>
-                    <picture>
-                        <source srcset="img/linsenpate/linsenpate_mobile_desktop.png" media="(max-width:767px)"><img
-                            src="img/linsenpate/linsenpate_mobile_mobile.png" alt="Linsepate Design by Júlia Marí Bernaus">
-                    </picture>
-                   </li>
-                    <li>
-                    <picture>
-                        <source srcset="img/linsenpate/linsenpate_desktop_mobile.png" media="(max-width:767px)"><img
-                            src="img/linsenpate/linsenpate_desktop_desktop.png" alt="Linsepate Design by Júlia Marí Bernaus">
-                    </picture>
-                    </li>
-                </ul>
+
+        <div id="mockups"><!--Open Before & After Section-->
+            <div class="lp-mockup-flex-grid-1"><!--Open New Design-->
+                <div class="mockup-box">
+                    <div class="mockup1">
+                        <picture>
+                        <source srcset="img/linsenpate/linsenpate_mobile_desktop.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_mobile_mobile.png" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                    </div>
+                    <div class="mockup2">
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_desktop_mobile.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_desktop_desktop.png" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                    </div>
+                </div>
             </div><!--End New Design-->
-            <div> <!--Open Old Design-->
-                <ul><!--Open Reference Designs-->
-                   <li>
-                       <p>Home Page - Lensit</p>
-                        <picture>
-                            <source srcset="img/linsenpate/lensit_mobile.png" media="(max-width:767px)"><img
-                                src="img/linsenpate/lensit_desktop.png" alt="Linsepate Design by Júlia Marí Bernaus">
-                        </picture>
-                    </li> 
-                    <li>
-                        <p>Home Page - Linsenpate before April 2021</p>
-                        <picture>
-                            <source srcset="img/linsenpate/linsenpate_old_mobile.png" media="(max-width:767px)"><img
-                                src="img/linsenpate/linsenpate_old_desktop.png" alt="Linsepate Design by Júlia Marí Bernaus">
-                        </picture>
-                    </li>
-                </ul>
-            </div><!--End Old Design-->
-        </div><!--Open Before & After Section-->
-        <section><!--Open Design System-->
-            <div>
+        </div>
+        <div class="lp-mockup-flex-grid-2"> <!--Open Old Design-->
+                <div class="mockup">
+                    <label>Home Page - Lensit</label>
+                    <picture>
+                        <source srcset="img/linsenpate/lensit_mobile.png" media="(max-width:767px)"><img
+                            src="img/linsenpate/lensit_desktop.png" alt="Linsepate Design by Júlia Marí Bernaus">
+                    </picture>
+                </div>
+                <div class="mockup">        
+                    <label>Home Page - Linsenpate before April 2021</label>
+                    <picture>
+                        <source srcset="img/linsenpate/linsenpate_old_mobile.png" media="(max-width:767px)"><img
+                            src="img/linsenpate/linsenpate_old_desktop.png" alt="Linsepate Design by Júlia Marí Bernaus">
+                    </picture>
+        </div><!--End Old Design-->
+        </div><!--Close Before & After Section-->
+        
+        <section id="design-system"><!--Open Design System-->
+            <div class="container">
                 <h2>Design System</h2>
-                <section><!--Open Colors-->
+                <p style="color: #f1f1f1">Here's a small sample of some of the pieces of the design system. 
+                    <br>The complete design system contanined: colors, typography, shadows & elevations, buttons, notifications, icons, images, components grouped in categories (menus, footers, banners, products, etc), and grids for mobile and desktop.</p>
+                <section class="ds-group"><!--Open Colors-->
                     <h3>Colors</h3>
-                    <ul><!--Open 1st Colors Line-->
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_white.svg" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_color_white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_darkwhite.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_darkwhite.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_grey.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_grey.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_darkgrey.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_darkgrey.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                    </ul><!--End 1st Colors Line-->
-                    <ul><!--Open 2nd Colors Line-->
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_yellow.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_yellow.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_darkyellow.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_darkyellow.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_lightblue.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_lightblue.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_darkblue.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_darkblue.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_red.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_red.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                    </ul><!--End 2nd Colors Line-->
-                    <ul>
-                        <!--Open 3rd Colors Line-->
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_20white.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_20white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_11white.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_11white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_7white.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_7white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_5white.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_5white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_2white.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_2white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                    </ul><!--End 3rd Colors Line-->
-                    <ul><!--Open 4th Colors Line-->
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_notblack.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_notblack.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                        <li>
-                            <picture>
-                                <source srcset="img/linsenpate/linsenpate_color_black.svg" media="(max-width:767px)"><img
-                                    src="img/linsenpate/linsenpate_color_black.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                            </picture>
-                        </li>
-                    </ul><!--End 4th Colors Line-->
+                    <div class="colors-flex-grid"><!--Open 1st Colors Line-->
+                        <picture class="lp-color">
+                            <source srcset="img/linsenpate/linsenpate_color_white.svg" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_color_white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture class="lp-color">
+                            <source srcset="img/linsenpate/linsenpate_color_darkwhite.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_darkwhite.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture class="lp-color">
+                            <source srcset="img/linsenpate/linsenpate_color_grey.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_grey.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture class="lp-color">
+                            <source srcset="img/linsenpate/linsenpate_color_darkgrey.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_darkgrey.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                    </div><!--End 1st Colors Line-->
+                    <div class="colors-flex-grid"><!--Open 2nd Colors Line-->
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_yellow.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_yellow.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_darkyellow.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_darkyellow.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_lightblue.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_lightblue.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_darkblue.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_darkblue.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_red.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_red.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                    </div>
+                    <div class="colors-flex-grid"><!--Open 3rd Colors Line-->
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_20white.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_20white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_11white.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_11white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_7white.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_7white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_5white.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_5white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_2white.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_2white.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                    </div><!--End 3rd Colors Line-->
+                    <div class="colors-flex-grid"><!--Open 4th Colors Line-->
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_notblack.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_notblack.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                        <picture>
+                            <source srcset="img/linsenpate/linsenpate_color_black.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_color_black.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                        </picture>
+                    </div><!--End 4th Colors Line-->
                 </section><!--End Colors-->
-                <section><!--Open Elevations-->
+                <section class="ds-group"><!--Open Elevations-->
                     <h3>Elevations and Shadows</h3>
                     <p>In the case of a dark themed design, the elevation is produced by the amount of white that the background has, that’s
                     why we have so many shades of grey as colors. However, all of these boxes/cards, can be even more elevated with a black
@@ -333,169 +292,172 @@
                         <source srcset="img/linsenpate/linsenpate_elevation_mobile.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_elevation_desktop.png" alt="Linsenpate Design by Júlia Marí Bernaus">
                     </picture>
                 </section><!--End Elevations-->
-                <section><!--Open Typography-->
+                <section class="ds-group"><!--Open Typography-->
                     <h3>Typography</h3>
-                    <section><!--Open Email Headers-->
-                        <h3>Email Headers</h3>
-                        <div>
-                            <h4>Email H1 | Desktop</h4>
+                    <h3 class="h3-typo">Email Headers</h3>
+                    <section class="typo-flex-grid"><!--Open Email Headers-->
+                        <div class="typo">
+                            <h4 class="h4-typo">Email H1 | Desktop</h4>
                             <p class="lp-email-h1-desktop">Karla Bold<br>
                             font-size: 72px<br>
                             line-height: 83px</p>
                         </div>
-                        <div>
-                            <h4>Email H1 | Mobile</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Email H1 | Mobile</h4>
                             <p class="lp-email-h1-mobile">Karla Bold<br>
                                 font-size: 54px<br>
                                 line-height: 63px</p>
                         </div>
-                        <div>
-                            <h4>Email H2 | Desktop</h4>
+                        <div class="typo"> 
+                            <h4 class="h4-typo">Email H2 | Desktop</h4>
                             <p class="lp-email-h2-desktop">Karla Bold<br>
                                 font-size: 50px<br>
-                                line-height: 28px</p>
+                                line-height: 58px</p>
                         </div>
-                        <div>
-                            <h4>Email H2 | Mobile</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Email H2 | Mobile</h4>
                             <p class="lp-email-h2-mobile">Karla Bold<br>
                                 font-size: 42px<br>
                                 line-height: 49px</p>
                         </div>
-                        <div>
-                            <h4>Email H3 | Desktop</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Email H3 | Desktop</h4>
                             <p class="lp-email-h3-desktop">Karla Bold<br>
                                 font-size: 44px<br>
                                 line-height: 51px</p>
                         </div>
-                        <div>
-                            <h4>Email H3 | Mobile</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Email H3 | Mobile</h4>
                             <p class="lp-email-h3-mobile">Karla Bold<br>
                                 font-size: 50px<br>
-                                line-height: 28px</p>
+                                line-height: 58px</p>
                         </div>
                     </section><!--Close Email Headers-->
-                    <section><!--Open Headers-->
-                        <h3>Headers</h3>
-                        <div>
-                            <h4>H2</h4>
-                            <p class="lp-h2">Karla Bold<br>
+                    
+                    <h3>Headers</h3>
+                    <section class="typo-flex-grid"><!--Open Headers-->
+                        <div class="typo">
+                            <h4 class="h4-typo">H1</h4>
+                            <p class="lp-h1">Karla Bold<br>
                             font-size: 34px<br>
                             line-height: 40px<br>
                             letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>H2</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">H2</h4>
                             <p class="lp-h2">Karla Bold<br>
                             font-size: 26px<br>
                             line-height: 35px<br>
                             letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>H3</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">H3</h4>
                             <p class="lp-h3">Karla Bold<br>
                             font-size: 22px<br>
                             line-height: 28px<br>
                             letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>H4</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">H4</h4>
                             <p class="lp-h4">Karla Bold<br>
                             font-size: 20px<br>
                             line-height: 24px<br>
                             letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>H5</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">H5</h4>
                             <p class="lp-h5">Karla Bold<br>
                             font-size: 18px<br>
                             line-height: 22px<br>
                             letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>H6</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">H6</h4>
                             <p class="lp-h6">Karla Bold<br>
                             font-size: 16px<br>
                             line-height: 20px<br>
                             letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>H7</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">H7</h4>
                             <p class="lp-h7">Karla Bold<br>
                             font-size: 14px<br>
                             line-height: 18px<br>
                             letter-spacing: 0.6px</p>
                         </div>
                     </section><!--End Headers-->
-                    <section><!--Open Body-->
-                        <h3>Body</h3>
-                        <div>
-                            <h4>Body XL Link</h4>
+                   
+                    <h3>Body</h3>
+                    <section class="typo-flex-grid"><!--Open Body-->
+                        <div class="typo">
+                            <h4 class="h4-typo">Body XL Link</h4>
                             <p class="lp-bodyxl-link">Karla Bold Underlined<br>
                                 font-size: 20px<br>
                                 line-height: 28px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>Body XL</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Body XL</h4>
                             <p class="lp-bodyxl">Karla Bold<br>
                                 font-size: 20px<br>
                                 line-height: 28px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>Body L</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Body L</h4>
                             <p class="lp-bodyl">Karla Bold<br>
                                 font-size: 18px<br>
                                 line-height: 26px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>Body M</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Body M</h4>
                             <p class="lp-bodym">Karla Bold<br>
                                 font-size: 16px<br>
                                 line-height: 22px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>Body M Link</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Body M Link</h4>
                             <p class="lp-bodym-link">Karla Bold Underlined<br>
                                 font-size: 16px<br>
                                 line-height: 22px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>Body S</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Body S</h4>
                             <p class="lp-bodys">Karla Bold<br>
                                 font-size: 14px<br>
                                 line-height: 18px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
-                        <div>
-                            <h4>Body S Link</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Body S Link</h4>
                             <p class="lp-bodys-link">Karla Bold Underlined<br>
                                 font-size: 14px<br>
                                 line-height: 18px<br>
                                 letter-spacing: 0.6px</p>
                         </div>
                     </section><!--End Body-->
-                    <section><!--Open Label-->
-                        <h3>Label</h3>
-                        <div>
-                            <h4>Label</h4>
+
+                    <h3 class="h3-typo">Label</h3>
+                    <section class="typo-flex-grid"><!--Open Label-->
+                        <div class="typo">
+                            <h4 class="h4-typo">Label</h4>
                             <p class="lp-label">Karla Regular<br>
                                 font-size: 12px<br>
                                 line-height: 18px<br>
                                 letter-spacing: 0.3px</p>
                         </div>
-                        <div>
-                            <h4>Label Bold</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Label Bold</h4>
                             <p class="lp-labelbold">Karla Bold<br>
                                 font-size: 12px<br>
                                 line-height: 18px<br>
                                 letter-spacing: 0.3px</p>
                         </div>
-                        <div>
-                            <h4>Label Caps</h4>
+                        <div class="typo">
+                            <h4 class="h4-typo">Label Caps</h4>
                             <p class="lp-labelcaps">Karla Bold Capitalized<br>
                                 font-size: 12px<br>
                                 line-height: 18px<br>
@@ -503,79 +465,45 @@
                         </div>
                     </section><!--End Label-->
                 </section><!--End Typography-->
-                <section><!--End Icons & Logo-->
+                <section class="icons"><!--End Icons & Logo-->
                     <h3>Icons & Logos</h3>
-                    <div>
                         <picture>
-                            <source srcset="img/linsenpate/linsenpate_icons_1.svg" media="(max-width:767px)"><img
-                                src="img/linsenpate/linsenpate_icons_1.svg" alt="Linsepate Design by Júlia Marí Bernaus">
+                            <source srcset="img/linsenpate/linsenpate_icons_mobile.svg" media="(max-width:767px)"><img
+                                src="img/linsenpate/linsenpate_icons_desktop.svg" alt="Linsepate Design by Júlia Marí Bernaus">
                         </picture>
-                    </div>
-                    <div>
-                        <picture>
-                            <source srcset="img/linsenpate/linsenpate_icons_2.svg" media="(max-width:767px)"><img
-                                src="img/linsenpate/linsenpate_icons_2.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                        </picture>
-                    </div>
-                    <div>
-                        <picture>
-                            <source srcset="img/linsenpate/linsenpate_icons_3.svg" media="(max-width:767px)"><img
-                                src="img/linsenpate/linsenpate_icons_3.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                        </picture>
-                    </div>
-                    <div>
-                        <picture>
-                            <source srcset="img/linsenpate/linsenpate_icons_4.svg" media="(max-width:767px)"><img
-                                src="img/linsenpate/linsenpate_icons_4.svg" alt="Linsepate Design by Júlia Marí Bernaus">
-                        </picture>
-                    </div>
                 </section><!--End Icons & Logo-->
                 <section><!--Open Buttons-->
                     <h3>Buttons</h3>
-                    <div>
-                    <picture>
+                    <picture class="buttons">
                         <source srcset="img/linsenpate/linsenpate_buttons_mobile.svg" media="(max-width:767px)"><img
                             src="img/linsenpate/linsenpate_buttons_desktop.svg" alt="Linsepate Design by Júlia Marí Bernaus">
                     </picture>
-                </div>
                 </section><!--Close Buttons-->
             </div>
         </section>
     </main>
 
-    <!-- Footer  -->
     <footer>
-
-        <!--Contact-->
-        <div class="container-contact" id="contact">
-            <div class="contact-wrapper">
-                <h3>Did you like my work?</h3>
-                <div class="contact-buttons-table">
-                    <ul id="contact-buttons-list">
-                        <li><a class="btn btn-primary contact-button" href="mailto:hi@juliamaribernaus.com"
-                                target="_blank" role="button">Shoot me an email</a></li>
-                        <li><a class="btn btn-secondary contact-button"
-                                href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank"
-                                role="button">Connect
-                                on LinkedIn</a></li>
-                    </ul>
-                </div>
+        <section id="contact">
+            <!--Open Contact-->
+            <h3>Did you like my work?</h3>
+            <div class="contact-button-wrapper">
+                <a class="btn btn-primary contact-button left" href="mailto:hi@juliamaribernaus.com" target="_blank"
+                    role="button">Shoot me an email</a>
+                <a class="btn btn-secondary contact-button right" href="https://www.linkedin.com/in/juliamaribernaus/"
+                    target="_blank" role="button">Connect on LinkedIn</a>
             </div>
-        </div>
+        </section>
         <!--end of contact-->
-
-        <div class="footer">
-            <div class="footer-table">
-                <ul id="footer-list">
-                    <li>
-                        <h6>©2021 All rights reserved</h6>
-                    </li>
-                    <li><a href="imprint.html" target="_blank">
-                            <h6>Imprint</h6>
-                        </a></li>
-                </ul>
-            </div>
+    
+        <div class="imprint">
+            <!--Open Imprint-->
+            <h6>©2021 All rights reserved</h6>
+            <a href="imprint.html" target="_blank">
+                <h6>Imprint</h6>
+            </a>
         </div>
+        <!--End Imprint-->
     </footer>
     <!--end of footer-->
 </body>
