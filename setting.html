@@ -16,6 +16,8 @@
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" href="css/normalize.css#">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_st.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,11 +34,11 @@
             <a class="logo" href="index.html">Júlia Mari Bernaus</a>
             <nav>
                 <ul>
-                    <li><a class="top-nav" href="index.html#work">Work</a></li>
-                    <li><a class="top-nav" href="index.html#about">About</a></li>
-                    <li><a class="top-nav" href="index.html#contact">Contact</a></li>
-                    <li><a class="top-nav" href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank">LinkedIn</a>
-                    </li>
+                    <li><a class="top-nav d-none d-md-block" href="index.html#work">Work</a></li>
+                    <li><a class="top-nav d-none d-md-block" href="index.html#about">About</a></li>
+                    <li><a class="top-nav d-none d-md-block" href="index.html#contact">Contact</a></li>
+                    <li><a class="top-nav d-none d-md-block" href="https://www.linkedin.com/in/juliamaribernaus/"
+                            target="_blank">LinkedIn</a></li>
                     <li><a class="btn-nav btn-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
                             role="button">Get in touch</a></li>
                 </ul>
@@ -47,10 +49,9 @@
 
     <!-- Hero -->
     <main>
-        <section><!--Open Intro-->
-            <div><!--Open Right Column-->
-                <h2>Setting</h2>
-                <div><!--Open Text on Right Column-->
+        <section id="st-intro" class="st-intro-flex-grid container"><!--Open Intro-->
+            <div class="st-intro-left"><!--Open Right Column-->
+                <h2>Setting</h2><!--Open Text on Right Column-->
                     <p>In Summer 2020, Setting, one of the leading office marketplace for startups, scaleups, and innovators in Berlin
                     contacted me to redesign their website.<br>
                     
@@ -64,117 +65,117 @@
                     
                     Check the resulting prototype here and dive deeper into the process furhter down the page.
                     </p>
-                </div> <!--End Text on Right Column-->
+                <!--End Text on Right Column-->
                 <div class="project-cta"><!--Open CTAs on Right Column-->
-                     <ul id="project-cta-list">
-                            <li><a class="btn btn-primary project-cta" href="#" target="_blank" role="button">Keep on reading</a></li>
-                            <li><a class="btn btn-secondary project-cta" href="https://setting.io/" target="_blank" role="button">Visit setting.io</a></li>
-                    </ul>
+                    <a class="btn btn-primary project-cta" href="#" target="_blank" role="button">Keep on reading</a></li>
+                    <a class="btn btn-secondary project-cta" href="https://setting.io/" target="_blank" role="button">Visit setting.io</a></li>
                 </div><!--End CTAs on Right Column-->
             </div><!--Close right column-->
-            <div><!--Open Left Column-->
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+            <div class="st-intro-right"><!--Open Left Column-->
+                <iframe style="border: 0px;" width="100%" height="700"
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOoYnOXz8ZH1D3ErkTkL78J%2FSetting-Prototype-UI%3Fnode-id%3D2187%253A449%26viewport%3D89%252C406%252C0.02984790876507759%26scaling%3Dscale-down%26page-id%3D2187%253A448"
                     allowfullscreen></iframe>
             </div><!--Close Left Column-->
         </section><!--Close Intro Section-->
-        <section><!--Open The Challenge-->
-                <div><!--Open Challenge Header-->
+
+        <section id="challenge"><!--Open The Challenge-->
+                <div class="container container-challenge"><!--Open Challenge Header-->
                 <h3>The Challenge</h3>
                 <p>How can I help...</p>
-                <div>
-                    <ul><!--Open Challenge numbers-->
-                        <li>01</li>
-                        <li>Communicate the services to create new and better leads.</li>
+                <div class="table-flex-grid">
+                    <ul class="table-item"><!--Open Challenge numbers-->
+                        <li class="nr">01</li>
+                        <li><p>Communicate the services to create new and better leads.</p></li>
                     </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>02</li>
-                        <li>Display the values and company culture to attract suited candidates.</li>
+                    <ul class="table-item">
+                        <li class="nr">02</li>
+                        <li><p>Display the values and company culture to attract suited candidates.</p></li>
                     </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>03</li>
-                        <li>Transmit trust and value to the provided service?</li>
+                    <ul class="table-item">
+                        <li class="nr">03</li>
+                        <li><p>Transmit trust and value to the provided service?</p></li>
                     </ul>
                 </div><!--Close Challenge Numbers-->
                 </div><!--End Challenge Header-->
         </section><!--End The Challenge-->
+        
+        <div class="st-hero">
         <picture><!--Open Hero Image-->
             <source srcset="img/setting/setting_mobile.png" media="(max-width:767px)"><img src="img/setting/setting_desktop.png" alt="Setting Design by Júlia Marí Bernaus">
-        </picture><!--End Hero Image-->
-        <section><!--Open Project Description-->
-            <div><!--Open Left Column-->
-                <h3>About Setting</h3>
-                <p>Setting HQ is the leading office marketplace for startups, scaleups, and innovators. From world-renowned brands to local
-                businesses, their mission is to identify a space that perfectly matches the company’s unique personality and
-                culture—creating a custom solution for the team.</p>
-                <div>   
-                    <ul>
-                        <li>
+        </picture>
+        </div><!--End Hero Image-->
+
+        <section id="prj-description" class="prj-flex-grid container"><!--Open Project Description-->
+            <div class="prj-left-col"><!--Open Left Column-->
+                <div>
+                    <h3>About Setting</h3>
+                    <p>Setting HQ is the leading office marketplace for startups, scaleups, and innovators. From world-renowned brands to local
+                    businesses, their mission is to identify a space that perfectly matches the company’s unique personality and
+                    culture—creating a custom solution for the team.</p>
+                </div>
+                <div class="prj-left-col-2">   
+                    <div class="prj-left-col-2-left">
                             <h3>My Role</h3>
                             <p>UX/UI Designer</p>
-                        </li>
-                        <li>
-                            <h3>Tools</h3>
-                            <p>Figma<br>
-                            Photoshop</p>
-                        </li>
-                    </ul>
+                    </div>
+                    <div>
+                        <h3>Tools</h3>
+                        <p>Figma<br>
+                        Photoshop</p>
+                    </div>
                 </div>
-                <div>
+                <div class="prj-goal">
                     <h3>Goal</h3>
                     <p>To redesign seeting.io in order to:</p>
                     <ul>
-                    <li>Explain the new products and create new and better leads.</li>
-                    <li>Communicate the mission, vision, values and company culture to attract suitable candidates.</li>
-                    <li>Create an aesthetic website to transmit trust and the company’s maturity.</li>
+                        <li><p>Explain the new products and create new and better leads.</p></li>
+                        <li><p>Communicate the mission, vision, values and company culture to attract suitable candidates.</p></li>
+                        <li><p>Create an aesthetic website to transmit trust and the company’s maturity.</p></li>
                     </ul>
                 </div>
             </div><!--End Left Column-->
-            <div><!--Open Right Column-->
+            <div class="prj-right-col"><!--Open Right Column-->
             <h3>The Process</h3>
             <ul>
-                <li>Talks with the CEO and various team members to understand the client’s motivations, the goals and vision of expected
-                result.</li>
-                <li>Understanding of the user types through conversations with the CEO and creation of proto-personas.</li>
-                <li>Competitors Analysis</li>
-                <li>Creation of paper sketches</li>
-                <li>Creation of grey-scale wireframes of mobile and desktop pages (responsive website)</li>
-                <li>Applying UI to the wireframes</li>
-                <li>Prototyping mobile and desktop version</li>
-                <li>Putting together Design System</li>
-                <li>Hand-off to Developers</li>
-                <li>Defining tone, and pictures concepts to be taken by a professional photographer.</li>
-                <li>Design revision hand-in-hand with developers</li>
-                <li>We continue to test, analyse and develop features, such as a better dashboard for internal and external purposes.</li>
+                <li><p>Talks with the CEO and various team members to understand the client’s motivations, the goals and vision of expected
+                result.</p></li>
+                <li><p>Understanding of the user types through conversations with the CEO and creation of proto-personas.</p></li>
+                <li><p>Competitors Analysis</p></li>
+                <li><p>Creation of paper sketches</p></li>
+                <li><p>Creation of grey-scale wireframes of mobile and desktop pages (responsive website)</p></li>
+                <li><p>Applying UI to the wireframes</p></li>
+                <li><p>Prototyping mobile and desktop version</p></li>
+                <li><p>Putting together Design System</p></li>
+                <li><p>Hand-off to Developers</p></li>
+                <li><p>Defining tone, and pictures concepts to be taken by a professional photographer</p></li>
+                <li><p>Design revision hand-in-hand with developers</p></li>
+                <li><p>We continue to test, analyse and develop features, such as a better dashboard for internal and external purposes</p></li>
             </ul>
             </div><!--End of Right Column-->
         </section>
-        <section><!--Open Desktop Prototype-->
-            <div>
+        <section id="desktop-prototype"><!--Open Desktop Prototype-->
+            <div class="container">
                 <h3>Desktop Prototype</h3>
-                <p>Click on the blue areas to navigate through the prototype</p>
-            </div>
-            <div><!--Open Desktop iFrame-->
-                <iframe style="border: none;" width="1000" height="800"
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOoYnOXz8ZH1D3ErkTkL78J%2FSetting-Prototype-UI%3Fnode-id%3D753%253A681%26viewport%3D442%252C446%252C0.020680343732237816%26scaling%3Dscale-down%26page-id%3D753%253A1"
-                    allowfullscreen>
-                </iframe>
+                <p>Although it was only required from me to build wireframes, I decided to build a simple prototype. The reason behind was that the sign up flow was unclear to me. Thanks to this, we discovered that the sign up flow and functionality needed to be changed and we removed it temporarily. 
+                <br>Click on the blue areas to navigate through the prototype.</p>
+                <div class="iframe"><!--Open Desktop iFrame-->
+                    <iframe style="border: none;" width="100%" height="800"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOoYnOXz8ZH1D3ErkTkL78J%2FSetting-Prototype-UI%3Fnode-id%3D753%253A681%26viewport%3D442%252C446%252C0.020680343732237816%26scaling%3Dscale-down%26page-id%3D753%253A1"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </section>
-        <section><!--Open Design System Prototype-->
-            <div>
+        <section id="design-system"><!--Open Design System Prototype-->
+            <div class="container">
                 <h3>Design System</h3>
-                <p>Use your right and left keyboard arrows to navigate through the Design System</p>
-            </div>
-            <div><!--Open Design System iFrame-->
-            <iframe style="border: none;" width="1000" height="800"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOoYnOXz8ZH1D3ErkTkL78J%2FSetting-Prototype-UI%3Fnode-id%3D2366%253A3%26viewport%3D44%252C462%252C0.016561182215809822%26scaling%3Dcontain%26page-id%3D1997%253A3897"
-                allowfullscreen>
-            </iframe>
+                <p>I created a Design System in a format that could be printed or sent to anyone who needed to make use of it. We have currently already used it for the photographer to understand the look & feel of the company.
+                <br>Use your right and left keyboard arrows to navigate through the Design System</p>
+             <div class="iframe"><!--Open Design System iFrame-->
+                <iframe style="border: none;" width="100%" height="800"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOoYnOXz8ZH1D3ErkTkL78J%2FSetting-Prototype-UI%3Fnode-id%3D2366%253A3%26viewport%3D44%252C462%252C0.016561182215809822%26scaling%3Dcontain%26page-id%3D1997%253A3897"
+                    allowfullscreen>
+                </iframe>
             </div>
         </section><!--End of Design System Prototype-->
     </main>

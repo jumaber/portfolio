@@ -56,7 +56,7 @@ h6{
     line-height: 17px;
 }
 
-p{
+body, p{
     font-weight: normal;
     font-size: 1.125rem; /*18px;*/
     line-height: 30px;
@@ -289,7 +289,7 @@ a.logo:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 8%;
     padding-bottom: 5%;
 }
 
@@ -303,6 +303,7 @@ a.logo:hover{
     flex-basis: 50%;
     text-align: center;
     max-width: 380px;
+    min-width: 320px;
     margin-top: 50px;
     margin-bottom: 50px; 
 }   
