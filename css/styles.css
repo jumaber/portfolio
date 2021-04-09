@@ -233,7 +233,9 @@ img{
     align-items: center;
 
 }
-
+.logo{
+    display: flex;
+}
 nav{
     display: flex;
     justify-content: flex-end;
