@@ -28,13 +28,13 @@ Grey bg: #F8F8F8;
 .st-intro-left{
     flex-grow: 1;     
     flex-basis: 58%;
-    min-width: 320px;
+    min-width: 300px;
  }
 
 .st-intro-right{
     flex-grow: 1;
     flex-basis: 42%;
-    min-width: 320px;
+    min-width: 300px;
 }
 
 .project-cta {
@@ -76,7 +76,7 @@ Grey bg: #F8F8F8;
 }
 
 .table-item{
-    width:320px;
+    width:300px;
     display: flex;
     align-items: flex-start;
 }
@@ -126,14 +126,14 @@ li p{
 .prj-left-col{
     flex-grow: 3;     
     flex-basis: 45%;
-    min-width: 320px;
-    padding-right: 5%;
+    min-width: 300px;
+    padding-right: 3%;
 }
 
 .prj-right-col{
     flex-grow: 1;
     flex-basis: 55%;
-    min-width: 320px;
+    min-width: 300px;
 }
 
 .prj-left-col-2{
@@ -183,4 +183,36 @@ li p{
     padding-bottom: 5rem; 
     background-color: #F8F8F8;
 
+}
+
+
+/********* Media Queries **********/
+
+/* ==============================
+Small devices // Smaller than iPad (768px and smaller)
+================================= */
+@media only screen and (max-width: 768px) {
+    .iframe-box{
+        display: none;
+
+    }   
+
+    #st-intro{
+    margin-top: 20%;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (max-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (max-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (max-width: 1920px) {
 }

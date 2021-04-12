@@ -149,7 +149,7 @@ img{
 /********** Page Opacity Animation **********/
 
 main{
-    animation: opening 2s ease-in;    
+    animation: opening 1.5s ease-in;    
 }
 
 @keyframes opening{
@@ -161,9 +161,13 @@ main{
     }
 }
 
+.pic-animation:hover{
+    transform: rotate(1deg);
+}
+
 /********** Buttons **********/
 
-.btn-nav {
+.button-nav {
     display: inline-block;
     font-weight: 700;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -177,7 +181,7 @@ main{
     border-radius: 1.875rem;
 }
 
-.btn {
+.button {
     display: inline-block;
     font-weight: 700;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -192,32 +196,34 @@ main{
     height: 54px;
     justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
+    padding-top: 0.9rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background: #0C0093;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    transition: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+ ;
 }
 
-.btn-primary {
+.button-primary {
     color: white;
     background-color: #0C0093;
     background-image: none;
 }
 
-.btn-primary:hover, .btn-primary:focus  {
-    color: #0C0093;
-    background-color: white;
-    background-image: none;
-    border-color: #0C0093;
-    text-decoration: none;
-    border-width: 2px;
+.button-primary:hover, .button-primary:focus  {
+    color: white;
+    transform: translate(0,-2px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+
+
 }
 
-.btn:active{
+.button:active{
     background-color: #FDFF92;
 }
 
-.btn-outline-secondary {
+.button-outline-secondary {
     color: white;
     background-color: #0C0093;
     background-image: none;
@@ -225,15 +231,17 @@ main{
     border-width: 1px;
 }
 
-.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+.button-outline-secondary:hover, .button-outline-secondary:focus {
     color: #0C0093;
     background-color:white;
     background-image: none;
     border-color: #0C0093;
     text-decoration: none;
+    transform: translate(0,-2px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.btn-secondary{
+.button-secondary{
     color: #0C0093;
     background-color:white;
     background-image: none;
@@ -242,13 +250,10 @@ main{
     border-width: 2px;
 }
 
-.btn-secondary:hover, .btn-secondary:focus{
-   color: #0C0093;
-    background-color: #FDFF92;
-    background-image: none;
-    border-color:#0C0093;
-    text-decoration: none;
-    border-width: 2px;
+.button-secondary:hover, .bbutton-secondary:focus{
+    color: #0C0093;
+    transform: translate(0,-2px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /********** Top Navigation Bar **********/
@@ -292,7 +297,7 @@ a.top-nav{
 
 a.top-nav:hover{
     color: #FDFF92;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a.top-nav:active{
@@ -307,7 +312,6 @@ a.logo{
     line-height: 20px;
     color: white;
     float: left;
-    transition-duration: 0.9s;
 
 }
 
@@ -325,26 +329,26 @@ a.logo:hover{
     padding-right: 5%;
 }
 
-/* Brackets go out */
+/* Animation Brackets go out */
 
-.brackets a:before, .brackets a:after {
+/* .brackets a:before, .brackets a:after {
     position: relative;
     opacity: 0;
-    font-size: 16px;
+    font-size: 12px;
     top: 0px;
     transition: all 0.8s;
     -webkit-transition: all 0.8s;
 }
 
 .brackets a:before {
-    content: '(';
+    content: '·';
     left: -5px;
     transform: translateX(10px);
     -webkit-transform: translateX(10px);
 }
 
 .brackets a:after{
-    content: ')';
+    content: '·';
     right: -5px;
     transform: translateX(-10px);
     -webkit-transform: translateX(-10px);
@@ -354,8 +358,7 @@ a.logo:hover{
     opacity: 1;
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
-}
-
+} */
 
 /********** Home Hero **********/
 
@@ -365,14 +368,15 @@ a.logo:hover{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%;    
     padding-bottom: 5%;
-    padding-top:8%;
+    padding-top:5%;
 }
 
 .hero-pic{
     flex-basis: 50%;
     align-items: center;
+    box-sizing: content-box;
     
 }
 
@@ -407,6 +411,7 @@ a.logo:hover{
     padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
+    transform: translate(0,-2px);
 }
 
 .project{
@@ -416,11 +421,10 @@ a.logo:hover{
     width: 45%;
     min-width: 300px;
 }
-   
-
 
 .project:hover img{
-    opacity: 0.8;
+    opacity: 0.6;
+    transform: translate(0,-2px);
     background-color:#F8F8F8;
 
 }

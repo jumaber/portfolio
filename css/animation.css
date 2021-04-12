@@ -1,0 +1,107 @@
+/*Colors:
+Yellow: #FDFF92;
+Blue: #0C0093;
+Pink: #FFA7A7;
+*/
+
+.center-animation{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@keyframes pic-increase {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.pic{
+    animation-name: pic-increase;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-timing-function: ease-in;
+}
+
+.animation:hover{
+    transform: rotate(1deg);
+    opacity: 0.9;
+}
+
+@keyframes yellow-move{
+    0%{
+        transform: translate(10px, 48px);
+        opacity: 0%;
+    }
+
+    50%{
+        transform: translate(-10px, -20px);
+    }
+    
+    100%{
+        transform: translate(0px, 0px);
+        opacity: 100%;
+    }
+}
+
+.yellow{
+    animation-name: yellow-move;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: unset;
+    animation-timing-function: linear;
+}
+
+@keyframes blue-move{
+    0%{
+        transform: translate(-10px, -28px);
+        opacity: 0%;
+    }
+
+    50%{
+        transform: translate(10px, -20px);
+    }
+    
+    100%{
+        transform: translate(0px, 0px);
+        opacity: 100%;
+    }
+}
+
+.blue{
+    animation-name: blue-move;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: unset;
+    animation-timing-function: linear;
+}
+
+@keyframes pink-move{
+    0%{
+        transform: translate(-50px, -50px);
+        opacity: 0%;
+    }
+
+    50%{
+        transform: translate(10px, 10px);
+    }
+    
+    100%{
+        transform: translate(0px, 0px);
+        opacity: 100%;
+    }
+}
+
+.pink{
+    animation-name: pink-move;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: unset;
+    animation-timing-function: linear;
+    
+}
