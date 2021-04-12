@@ -429,3 +429,81 @@ li p{
     display: flex;
     align-items: flex-start;
 }
+
+
+/********** Media Queries **********/
+
+
+/* ==============================
+Small devices // Smaller than iPad (768px and smaller)
+================================= */
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 1.875rem;
+        line-height: 42px;
+    }
+
+    .top-nav{
+        display: none;
+    }
+
+    .hero-pic {
+        display: none;
+    }
+
+    .hero-cta{
+        margin-top: 35%;
+        margin-bottom: 35%;
+    }
+    
+    .work-wrapper h3, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3 {
+        padding-top:10%;
+        padding-bottom: 6%;
+    }
+
+    .project p, .container-about p, .slide p{
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    p.label-role{
+        font-size: 0.85rem;
+    }
+
+    #recommendation .container-slides {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/*********** Media Queries **********/
+
+/* ==============================
+Small devices // Smaller than iPad (768px and smaller)
+================================= */
+@media only screen and (max-width: 768px) {
+    .lp-intro-left {
+        text-align: center;
+    }
+
+    .project-cta{
+        justify-content: center;
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (max-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (max-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (max-width: 1920px) {
+}

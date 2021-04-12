@@ -271,7 +271,7 @@ a.top-nav{
     line-height: 20px;
     font-weight: 700;
     color: white;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 a.top-nav:hover{
@@ -291,7 +291,6 @@ a.logo{
     line-height: 20px;
     color: white;
     float: left;
-    padding-top: 8px;
 }
 
 a.logo:hover{
@@ -315,24 +314,28 @@ a.logo:hover{
     opacity: 0;
     font-size: 16px;
     top: 0px;
-    transition: all 0.5s;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
 }
 
 .brackets a:before {
     content: '(';
     left: -5px;
     transform: translateX(10px);
+    -webkit-transform: translateX(10px);
 }
 
 .brackets a:after{
     content: ')';
     right: -5px;
     transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
 }
 
 .brackets a:hover:before, .brackets a:hover:after{
     opacity: 1;
     transform: translateX(0px);
+    -webkit-transform: translateX(0px);
 }
 
 
@@ -391,9 +394,9 @@ a.logo:hover{
 .project{
     background-color: #F2F2F6;
     border-radius: 10px;
-    margin-top: 1%;
+    margin: 1%;
     width: 45%;
-    min-width: 320px;
+    min-width: 300px;
 }
    
 
@@ -519,6 +522,7 @@ a.logo:hover{
 
 .imprint h6{
     text-align: center;
+    color: #343434;
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: normal;
@@ -530,30 +534,60 @@ a.logo:hover{
 
 
 /* ==============================
-Medium devices (320px and larger)
+Small devices // Smaller than iPad (768px and smaller)
 ================================= */
-@media only screen and (min-width: 320px) {
-}
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 1.875rem;
+        line-height: 42px;
+    }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
+    .top-nav{
+        display: none;
+    }
+
+    .hero-pic {
+        display: none;
+    }
+
+    .hero-cta{
+        margin-top: 35%;
+        margin-bottom: 35%;
+    }
+    
+    .work-wrapper h3, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3 {
+        padding-top:10%;
+        padding-bottom: 6%;
+    }
+
+    .project p, .container-about p, .slide p{
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    p.label-role{
+        font-size: 0.85rem;
+    }
+
+    #recommendation .container-slides {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
 }
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
+@media only screen and (max-width: 1920px) {
 }
