@@ -12,6 +12,7 @@ Background: #F8F8F8;
 
 html{
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 .name{
@@ -145,6 +146,20 @@ img{
     margin: 0 auto;
 }
 
+/********** Page Opacity Animation **********/
+
+main{
+    animation: opening 2s ease-in;    
+}
+
+@keyframes opening{
+    0% {
+    opacity: 0%;
+    }
+    100% {
+    opacity: 100%;
+    }
+}
 
 /********** Buttons **********/
 
@@ -253,6 +268,7 @@ img{
 }
 .logo{
     display: flex;
+    
 }
 .nav .brackets{
     display: flex;
@@ -291,6 +307,8 @@ a.logo{
     line-height: 20px;
     color: white;
     float: left;
+    transition-duration: 0.9s;
+
 }
 
 a.logo:hover{
@@ -348,8 +366,8 @@ a.logo:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 8%;
     padding-bottom: 5%;
+    padding-top:8%;
 }
 
 .hero-pic{
@@ -554,7 +572,7 @@ Small devices // Smaller than iPad (768px and smaller)
         margin-top: 35%;
         margin-bottom: 35%;
     }
-    
+
     .work-wrapper h3, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3 {
         padding-top:10%;
         padding-bottom: 6%;
