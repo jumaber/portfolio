@@ -11,7 +11,8 @@ Grey bg: #F8F8F8;
 /*********** Setting Intro **********/
 
 #st-intro{
-    margin-top: 130px;
+    padding-top: 5%;
+    height: 100vh;
 }
 
 .st-intro-flex-grid{
@@ -21,7 +22,6 @@ Grey bg: #F8F8F8;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    margin-top: 6em;
     align-content: space-between;
 }
 
@@ -46,14 +46,15 @@ Grey bg: #F8F8F8;
     align-items: center;
     max-width: 444px;
 }
-.project-cta .btn{
+.project-cta .button{
     max-width: 210px;
     margin-bottom: 6px;
     margin-top: 6px;
 }
 
-.project-cta .btn-secondary{
+.project-cta .button-secondary{
     max-width: 230px;
+    
 }
 
 
@@ -238,15 +239,17 @@ Small devices // Smaller than iPad (768px and smaller)
 @media only screen and (max-width: 768px) {
     .iframe-box{
         display: none;
-
     }   
 
     #st-intro{
-    margin-top: 20%;
-    }
+        padding-top: 10%;
+        height: auto;
+        padding-bottom: 10%;
+    }   
+
     .mobile{
         display: none;
-    }
+    }   
 }
 /* ==============================
 Large devices (Smaller than 1024px)
@@ -254,6 +257,21 @@ Large devices (Smaller than 1024px)
 @media only screen and (max-width: 1023px) {
     .mobile{
         display: none;
+    }
+        
+    #challenge{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+ 
+    #prj-description{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #wireframes{
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 }
 
