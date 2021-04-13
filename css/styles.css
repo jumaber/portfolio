@@ -558,6 +558,32 @@ a.logo:hover{
     padding-left: 16px;
 }
 
+.imprint-underline:hover{
+    text-decoration: underline;
+    text-decoration-color: #343434;
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 1.5px;
+}
+
+footer .imprint-page{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/********** Imprint Page ***********/
+
+#imprint-page{
+display: block;
+margin: 0 auto;
+}
+
+.imprint-inner{
+    padding: 10% 0;
+    text-align: center;
+}
 /********** Media Queries **********/
 
 
