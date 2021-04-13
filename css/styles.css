@@ -566,7 +566,7 @@ Small devices // Smaller than iPad (768px and smaller)
 ================================= */
 @media only screen and (max-width: 768px) {
     h1{
-        font-size: 1.875rem;
+        font-size: 2rem;
         line-height: 42px;
     }
 

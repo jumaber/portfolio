@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap');
 
-
 /********** Linsenpate **********/
 /* Colors Used
 Black bg: #212121;
@@ -108,7 +107,7 @@ li p{
 
 .prj-flex-grid{
     display: flex;
-    flex-direction: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 6em;
