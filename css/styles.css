@@ -141,11 +141,6 @@ img{
   box-sizing: border-box;
 }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-
 /********** Page Opacity Animation **********/
 
 main{
