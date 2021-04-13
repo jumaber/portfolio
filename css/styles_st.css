@@ -157,6 +157,48 @@ li p{
     margin-left:-20px; 
 }
 
+/*********** Wireframes *************/
+#wireframes{
+    background-color: #F8F8F8;
+}
+
+.wireframes-flex-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#wireframes h3{
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 5%;
+}
+
+#wireframes p{
+    text-align: left;
+    padding-left: 2%;
+}
+
+.wireframe{
+    display: block;
+    border-radius: 10px;
+    margin: 2%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-basis: 40%;
+    flex-grow: 2;
+    flex-shrink: 0;
+    min-width: 280px;
+}
+
+.wireframe-button{
+    max-width: 290px;
+    min-width: 280px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: left;
+}
+
 /******* Desktop Prototype ********/
 
 #desktop-prototype{
@@ -174,6 +216,8 @@ li p{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 /*********** Design System ***********/
@@ -199,20 +243,37 @@ Small devices // Smaller than iPad (768px and smaller)
 
     #st-intro{
     margin-top: 20%;
-}
+    }
+    .mobile{
+        display: none;
+    }
 }
 /* ==============================
-Large devices (1024px or larger)
+Large devices (Smaller than 1024px)
 ================================= */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
+    .mobile{
+        display: none;
+    }
 }
+
 /* ==============================
-X-large devices (1440px or larger)
+Large devices (larger than 1024px)
 ================================= */
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) {
+    .not-mobile{
+        display: none;
+    }
 }
 /* ==============================
-Extra-large devices (1920px or larger)
+X-large devices (larger than 1440px)
+================================= */
+@media only screen and (min-width: 1440px) {
+   
+}
+/* ==============================
+Extra-large devices (Smaller than 1920px)
 ================================= */
 @media only screen and (max-width: 1920px) {
+  
 }
