@@ -107,6 +107,8 @@ label{
 
 a{
     color:#0C0093;
+    font-weight: 700;
+
 }
 
 a:hover{
@@ -336,36 +338,6 @@ a.logo:hover{
     padding-right: 5%;
 }
 
-/* Animation Brackets go out */
-
-/* .brackets a:before, .brackets a:after {
-    position: relative;
-    opacity: 0;
-    font-size: 12px;
-    top: 0px;
-    transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-}
-
-.brackets a:before {
-    content: '·';
-    left: -5px;
-    transform: translateX(10px);
-    -webkit-transform: translateX(10px);
-}
-
-.brackets a:after{
-    content: '·';
-    right: -5px;
-    transform: translateX(-10px);
-    -webkit-transform: translateX(-10px);
-}
-
-.brackets a:hover:before, .brackets a:hover:after{
-    opacity: 1;
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-} */
 
 /********** Home Hero **********/
 
@@ -529,11 +501,18 @@ color: #0C0093;
 .container-about p{
     padding-bottom: 24px;
     text-align: center;
-    max-width: 1000px;
+    max-width: 1100px;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+#more{
+    display: none;
+}
+
+#aboutBtn{
+    color: white;
+}
 /********** Recommendations **********/
 
 #recommendation {
@@ -544,28 +523,122 @@ color: #0C0093;
 
 }
 
-#recommendation .container-slides{
+/********* Slider Carousel **********/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    height: 400px;
+    position: relative;
     background-color: white;
     border-radius: 10px;
     margin-top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
     padding: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-.slides-wrapper{
-    padding-bottom: 5%;
+.mySlides {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.slide h4{
+.prev, .next{
+    position: absolute;
+    top: 50%;  
+    width: auto;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius:10px;
+    user-select: none;   
+    margin-right: 2%;
+    margin-top:-22px;
+    opacity: 0.5;
+}
+ 
+.next{
+    right: 3%;
+ 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transform: translate(-5px,-5px);
+}
+
+ .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transform: translate(5px,-5px);
+}
+
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #0C0093;
+}
+
+/* Fading animation
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-play-state:initial;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+} */
+
+.text h4{
     color: #0C0093;
-}
+} */
 
 
 /********** Contact in Footer **********/
@@ -703,6 +776,13 @@ Small devices // Smaller than iPad (768px and smaller)
     .image__overlay--blur{
         backdrop-filter: blur(0px);
         }
+
+    .slideshow-container {
+        height: 100%;
+    }
+    .next, .prev{
+        font-size: 12px;
+    }
 }
 
 /* ==============================

@@ -153,34 +153,100 @@
 		<section class="container-about" id="about">
 			<h3>About</h3>
 			<p><!--open paragraph-->
-				I am a Berlin-based UX/UI Developer and former founder of Artconnect.com, the largest online
-				creative community in
-				Berlin with 35k monthly active users. In 2020, I sold my venture and embarked on my true passion:
-				UX, UI Design and
-				Front-end development.
+				I am a Berlin-based UX/UI Designer and former founder of Artconnect.com, the largest online creative community in Berlin
+				with 35k monthly active users. In 2020, I sold my venture and embarked on my true passion: UX, UI Design and Front-end
+				Development.
+				<br>
+				<br>
+				I am currently working as a UX Design tutor at <a href="https://careerfoundry.com/" alt="_blank">CareerFoundry</a> and freelancing for companies such as <a href="https://www.misterspex.de/" alt="_blank">Mister Spex</a>,
+				<a href="https://www.settinghq.com/">Setting</a>, <a href="https://duxer.co.uk/">Duxer</a> (Ikea, Userzoom), and creating a product from scratch with KEA. On the side, I organize
+				<a href="http://designandfriends.com/">Design+Friends</a>, a monthly Berlin Designer meetup.<span id="dots">..</span>
+				<br>
+				<br>
+				<span id="more">With a background in Fine Arts and 10 years of experience in product design, communications strategy, and management, I
+				can offer a balanced combination of structure and creativity while working in a diverse team. Being a founder of a
+				business has given me unique insight into complex projects and what affects their success. I’ve also learned to be
+				resourceful and innovative to find solutions that work for customers. Having an education on the technical side, gives
+				me a deeper understanding on how to build websites that are easy to develop.
+				<br>
+				<br>
+				In my free time, you will find me chatting with my friends, creating new recipes, fermenting food, growing my plants, or dancing to new and old music (while cooking too!). I ride my bike everywhere and
+				don’t want to own a car. I love playing with my kids and answering their questions about the world. I read anything Ican get my hands on related to health, psychology, company culture, technology, business, and socio-political issues… or
+				just anything that catches my attention.
+				<br>
+				<br>
+				I am keen on keeping my private life “analog” and share it with my family and friends IRL 🙂 If you want to contact me,
+				write me an email at <a href="mailto:hi@juliamaribernaus.com" alt="_blank">hi@juliamaribernaus.com</a> or connect with me on <a href="https://www.linkedin.com/in/juliamaribernaus/">Linkedin.</a>
+				</span>
 			</p><!--end paragraph-->
-			<p><!--open paragraph-->
-				I am currently working as a UX Design tutor at CareerFoundry and freelancing for companies such as
-				Mister Spex,
-				Setting.io, Duxer (Ikea, Userzoom), and creating a product from scratch with KEA. On the side, I
-				organize
-				Design+Friends, a monthly Berlin Designer meetup.
-			</p><!--end paragraph-->
-			<a class="button button-primary" href="#" role="button">Learn more about me</a>			
+			<a class="button button-primary" role="button" onclick="ReadMore()" id="aboutBtn">Learn more about me</a>			
 		</section><!--end home-about-->
 
 		<section id="recommendation"><!--Open Recommendations-->
 			<h3>What others say about me</h3>
-			<div class="container-slides">
-				<div class="slide">
-					<p>Super project, excellent work! On-time and above scope! 👍  
-					<br>Júlia very quickly and independently got to grips with the
-					brand, the target audience and the product. Besides her skills in UX/UI design - already praised by others here - I
-					would also like to highlight her linguistic sensitivity. She not only understands many languages, but also knows how to
-					implement language for good UX. We would use Júlia's support and expertise again anytime - highly recommended!
-				</p>
-				<h4>Alexander Ständert</h4>
-				<h5>Product Owner at Mister Spex</h5>
+			<div class="slideshow-container">
+				<div class="mySlides">
+					<div class="text">
+						<p>Super project, excellent work! On-time and above scope! 👍  
+						<br>Júlia very quickly and independently got to grips with the
+						brand, the target audience and the product. Besides her skills in UX/UI design - already praised by others here - I
+						would also like to highlight her linguistic sensitivity. She not only understands many languages, but also knows how to
+						implement language for good UX. We would use Júlia's support and expertise again anytime - highly recommended!
+					</p>
+					<h4>Alexander Ständert</h4>
+					<h5>Product Owner at Mister Spex</h5>
+					</div>
+				</div>
+				<div class="mySlides">
+					<div class="text">
+						<p>I had the pleasure to tutor Júlia when she was a UX Design student at CareerFoundry. I was immediately impressed by her
+						eagerness to learn, her rigorous dedication to quality and her sharp eye for details. From her previous digital ventures
+						she gained a practical understanding for the business requirements a product has to fulfill and incorporated that into
+						her designs. On top of showing high initiative, she was an absolute joy to work with, radiating positivity and warmth.
+						This energy clearly shines through in her designs, too. In my humble opinion, any product team will be lucky to have her
+						as a designer and colleague
+						</p>
+						<h4>Christian Ernst</h4>
+						<h5>Product Designer and Tutor at CareerFoundry</h5>
+					</div>
+				</div>
+				<div class="mySlides">
+					<div class="text">
+						<p>Julia is a very talented and creative product manager. I had the chance to work closely with her on Artconnect, and I
+						was very impressed not only at her managerial skills but at how well she understands how to create a great UX. Her
+						vision and work on creating an online platform for creatives and artists will have a lasting positive impact on the
+						entire artistic scene. She is a very efficient manager, a great leader and a fun person to work with.
+						</p>
+						<h4>Hernan Maguiña</h4>
+						<h5>Full-Stack Developer</h5>
+					</div>
+				</div>
+					<div class="mySlides">
+						<div class="text">
+							<p>Julia has been ahead of times and innovator with her Artconnect platform, the go-to arts website in Berlin. It’s through
+							her company that we first connected via a contemporary art partnership and then furthering collaborations via
+							kulturspace, my creative agency. Julia saw the need way before anyone else and its for that reason shes been an
+							innovator in connecting the creativity community in Berlin, no easy feat! She is a welcomed partner and I’m proud to run
+							in the same local crew.
+							</p>
+							<h4>Justin Raymond Merino</h4>
+							<h5>Creative Strategist & Producer</h5>
+						</div>
+					</div>
+				<!-- Next and previous buttons -->
+					<div class="slide-nav">
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				<br>
+				</div>
+				
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
 				</div>
 			</div>
 		</section><!--End Recommendations-->
