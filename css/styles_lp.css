@@ -238,19 +238,36 @@ li p{
     margin-bottom: 24px;
 }
 
-.typo-flex-grid{
+/****** Horizontal Scroll *******/
+.scrolling-wrapper{
     display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: flex-end;
+    margin-bottom: 100px;
 }
+
 .typo{
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     padding-right: 4em;
 }
+
+.typo-container{
+    margin-left: 12%;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #212121; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121; 
+}
+
 
 /****** LP Design Typography *******/
 
@@ -485,15 +502,10 @@ Small devices // Smaller than iPad (768px and smaller)
 
     #prj-description{
         margin-top:3rem;
-    }
-
-    .typo-flex-grid{
-        padding-bottom: 5%;
-        padding-right: 2%;
-        }
+    } 
 
     .typo{
-        padding-right: 0em;
+        padding-right: 2em;
     }
 
     .table-item{
@@ -502,7 +514,11 @@ Small devices // Smaller than iPad (768px and smaller)
 
     .nr{
     font-size: 40px;
-}
+    }
+    .typo-container{
+        margin-left: 5%;
+        padding-right: 0;
+    } 
 }
 /*********** Media Queries **********/
 
@@ -535,17 +551,26 @@ Large devices (smaller than 1024px)
     padding-bottom: 0%;
 }
 .ds-group h3{
-    margin-bottom: 0px;
-    }   
+    margin-bottom: 0px;    
+}  
+    .typo-container{
+    margin-left: 12%;
+}
 }
 /* ==============================
 X-large devices (smaller than 1440px)
 ================================= */
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1440px) {
+    .typo-container{
+    margin-left: 21%;
+}
 }
 
 /* ==============================
 Extra-large devices (smaller than 1920px)
 ================================= */
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+    .typo-container{
+    margin-left: 21%;
+}
 }

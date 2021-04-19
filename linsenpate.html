@@ -150,7 +150,7 @@
                     <p>To redesign linsenpate.de while:</p>
                     <ul>
                         <li><p>Keeping the brand and website feeling</p></li>
-                        <li><p>Using the website structure of <a class="text" href="https://lensit.de" target="_blank">lensit.no</a></p></li>
+                        <li><p>Using the website structure of <a class="lp-text" href="https://lensit.de" target="_blank">lensit.no</a></p></li>
                         <li><p>Adapting the website structure to the german market</p></li>
                         <li><p>Adapting the check-out-flow to shopify</p></li>
                         <li><p>Merging German with Italian, to keep the story behind the brand</p></li>
@@ -161,7 +161,7 @@
                 <!--Open Right Column-->
                 <h3>The Process</h3>
                 <p>After a short introduction by the Product of Ecommerce at MisterSpex, I began exploring the existing website,
-                <a class="text" href="https://linsenpate.de" target="_blank">linsenpate.de</a>, and the IA reference website, <a class="text" href="https://lensit.de" target="_blank">lensit.no</a>. A few days after I was given access to the design material of
+                <a class="lp-text" href="https://linsenpate.de" target="_blank">linsenpate.de</a>, and the IA reference website, <a class="lp-text" href="https://lensit.de" target="_blank">lensit.no</a>. A few days after I was given access to the design material of
                 Lensit and I learned about the design patterns used.</p>
                 
                 <p>Since I had such a good reference, I only needed to apply an aesthetic UI to the structure provided. With a mobile-first
@@ -177,7 +177,7 @@
                 which had already been extensively tested and optimized, I applied the new UI to them. I also used my language skills to
                 emphasize the brand, by introducing Italian words in a way that could be understood by Germans.</p>
                 
-                <p>Finally, I proceeded to put together a design system and a components page for <a class="text" href="https://www.misterspex.de/" target="_blank">Mister Spex’s</a> designers to use as a
+                <p>Finally, I proceeded to put together a design system and a components page for <a class="lp-text" href="https://www.misterspex.de/" target="_blank">Mister Spex’s</a> designers to use as a
                 reference in the future.</p>
             </div>
             <!--End of Right Column-->
@@ -305,10 +305,13 @@
                         <source srcset="img/linsenpate/linsenpate_elevation_mobile.png" media="(max-width:767px)"><img src="img/linsenpate/linsenpate_elevation_desktop.png" alt="Linsenpate Design by Júlia Marí Bernaus">
                     </picture>
                 </section><!--End Elevations-->
+            </div>
+            
                 <section class="ds-group"><!--Open Typography-->
+                    <div class="typo-container">
                     <h3>Typography</h3>
                     <h3 class="h3-typo">Email Headers</h3>
-                    <section class="typo-flex-grid"><!--Open Email Headers-->
+                    <section class="scrolling-wrapper"><!--Open Email Headers-->
                         <div class="typo">
                             <h4 class="h4-typo">Email H1 | Desktop</h4>
                             <p class="lp-email-h1-desktop">Karla Bold<br>
@@ -348,7 +351,7 @@
                     </section><!--Close Email Headers-->
                     
                     <h3>Headers</h3>
-                    <section class="typo-flex-grid"><!--Open Headers-->
+                    <section class="scrolling-wrapper"><!--Open Headers-->
                         <div class="typo">
                             <h4 class="h4-typo">H1</h4>
                             <p class="lp-h1">Karla Bold<br>
@@ -401,7 +404,7 @@
                     </section><!--End Headers-->
                    
                     <h3>Body</h3>
-                    <section class="typo-flex-grid"><!--Open Body-->
+                    <section class="scrolling-wrapper"><!--Open Body-->
                         <div class="typo">
                             <h4 class="h4-typo">Body XL Link</h4>
                             <p class="lp-bodyxl-link">Karla Bold Underlined<br>
@@ -454,7 +457,7 @@
                     </section><!--End Body-->
 
                     <h3 class="h3-typo">Label</h3>
-                    <section class="typo-flex-grid"><!--Open Label-->
+                    <section class="scrolling-wrapper"><!--Open Label-->
                         <div class="typo">
                             <h4 class="h4-typo">Label</h4>
                             <p class="lp-label">Karla Regular<br>
@@ -476,22 +479,23 @@
                                 line-height: 18px<br>
                                 letter-spacing: 0.3px</p>
                         </div>
+                    </div>
                     </section><!--End Label-->
                 </section><!--End Typography-->
-                <section class="icons"><!--End Icons & Logo-->
+                <section class="icons" id="design-system">
+                <div class="container" >
                     <h3>Icons & Logos</h3>
                         <picture>
                             <source srcset="img/linsenpate/linsenpate_icons_mobile.svg" media="(max-width:767px)"><img
                                 src="img/linsenpate/linsenpate_icons_desktop.svg" alt="Linsepate Design by Júlia Marí Bernaus">
                         </picture>
-                </section><!--End Icons & Logo-->
-                <section><!--Open Buttons-->
-                    <h3>Buttons</h3>
+                    <h3>Buttons</h3><!--Open Buttons-->
                     <picture class="buttons">
                         <source srcset="img/linsenpate/linsenpate_buttons_mobile.svg" media="(max-width:767px)"><img
                             src="img/linsenpate/linsenpate_buttons_desktop.svg" alt="Linsepate Design by Júlia Marí Bernaus">
                     </picture>
-                </section><!--Close Buttons-->
+                </section><!--End Icons & Logo--><!--End Buttons-->
+            </div>
             </div>
         </section>
     </main>
@@ -520,5 +524,6 @@
     </footer>
     <!--end of footer-->
 </body>
+<script src="js/scripts.js"></script>
 
 </html>

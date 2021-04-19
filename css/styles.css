@@ -582,7 +582,7 @@ color: #0C0093;
 }
 
 /* Caption text */
-.text {
+.lp-text {
   font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
@@ -646,7 +646,11 @@ color: #0C0093;
 #contact{
     background-color: white;
     padding-top: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
+}
+
+.contact {
+    margin-bottom: 5%;
 }
 
 .contact-button{

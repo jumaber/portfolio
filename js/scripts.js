@@ -46,3 +46,11 @@ function ReadMore() {
     moreText.style.display = "inline";
   }
 }
+
+/* Linsenpate Typography Horizontal Scroll */
+function myFunction() {
+  var elmnt = document.getElementById("myDIV");
+  var x = elmnt.scrollLeft;
+  var y = elmnt.scrollTop;
+  document.getElementById("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+}
