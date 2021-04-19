@@ -158,6 +158,7 @@ main{
 
 .pic-animation:hover{
     transform: rotate(1deg);
+
 }
 
 /********** Buttons **********/
@@ -174,6 +175,8 @@ main{
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 1.875rem;
+    transition: transform 0.5s;
+
 }
 
 .button {
@@ -210,6 +213,8 @@ main{
     color: white;
     transform: translate(0,-2px);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s;
+
 
 
 }
@@ -297,6 +302,8 @@ a.top-nav:hover{
     text-decoration-color: #FDFF92;
     text-decoration-thickness: 0.2em;
     text-underline-offset: 1.5px;
+  
+
 }
 
 a.top-nav:active{
@@ -393,6 +400,9 @@ a.logo:hover{
 
 /********** Projects **********/
 
+picture img{
+    border-radius: 10px 10px 0 0;
+}
 .work-wrapper {
     align-items: center;
     background-color: #F8F8F8;
@@ -416,7 +426,7 @@ a.logo:hover{
 }
 
 .project{
-    background-color: #F2F2F6;
+    background-color:#f2f2f6;
     border-radius: 10px;
     margin: 1%;
     width: 45%;
@@ -424,10 +434,57 @@ a.logo:hover{
 }
 
 .project:hover img{
-    opacity: 0.6;
     transform: translate(0,-2px);
-    background-color:#F8F8F8;
+    background: black;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    transition: transform 0.5s;
+}
 
+.image{
+position: relative;
+width:100%; /*change to 100%*/
+}
+
+.image__img{
+display: block;
+width: 100%;
+}
+
+.image__overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image__overlay--blur{
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+
+.image__overlay:hover{
+opacity: 1;
+}
+
+.image__title h2{
+color: #0C0093;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0px);
 }
 
 .project-content{
@@ -453,6 +510,7 @@ a.logo:hover{
     line-height: 22px;
     display: inline-block;
 }
+
 
 
 /********** About **********/
@@ -616,12 +674,35 @@ Small devices // Smaller than iPad (768px and smaller)
 
     p.label-role{
         font-size: 0.85rem;
+        line-height: 12px !important;
+
+    }
+
+    .label-role {
+        display: flex;
+        margin-left: 0;
     }
 
     #recommendation .container-slides {
         margin-left: 2%;
         margin-right: 2%;
     }
+
+    .image__overlay{
+        opacity: 1;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+
+    }
+
+    .image__overlay h2{
+        font-size: 16px;
+        color:#FFA7A7;
+
+    }
+    .image__overlay--blur{
+        backdrop-filter: blur(0px);
+        }
 }
 
 /* ==============================
