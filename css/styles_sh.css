@@ -163,76 +163,6 @@ li.challenge, li.nr{
 }
 
 
-/********** Slides Competitor Analysis **********/
-
-.slides-wrapper{
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-.slideshow-container {
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 0;
-    margin-bottom: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3%;
-}
-
-.mySlides {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.prev, .next{
-    position: absolute;
-    top: 50%;  
-    width: auto;
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.6s ease;
-    border-radius:10px;
-    user-select: none;   
-    margin-top:-22px;
-    opacity: 0.5;
-}
- 
-/* .next{
-} */
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    transform: translate(-5px,-5px);
-}
-
- .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    transform: translate(5px,-5px);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 8px;
-  width: 8px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #0C0093;
-}
-
-
-
 /******* 01 Sum-up Goals Research *****/
 
 .grid_2x2{
@@ -259,7 +189,6 @@ li.challenge, li.nr{
     max-width: 480px;
     min-width: 300px;
 }
-
 
 /********** 02 Sum-up Goals Survey **********/
 
