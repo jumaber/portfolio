@@ -372,7 +372,7 @@ a.logo:hover{
 
 /********** Projects **********/
 
-picture img{
+.round-borders{
     border-radius: 10px 10px 0 0;
 }
 .work-wrapper {
@@ -590,14 +590,6 @@ color: #0C0093;
   text-align: left;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -638,7 +630,7 @@ color: #0C0093;
 
 .text h4{
     color: #0C0093;
-} */
+}
 
 
 /********** Contact in Footer **********/
@@ -649,7 +641,7 @@ color: #0C0093;
     padding-bottom: 10%;
 }
 
-.contact {
+.contact{
     margin-bottom: 5%;
 }
 
@@ -663,7 +655,7 @@ color: #0C0093;
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: 50%;
-}    
+}   
 
 /********** Footer **********/
 

@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap');
+
+
+/********** Setting **********/
+
+/* Colors Used
+Primary Color: #0C0093;
+Secondary Color: #FDFF92;
+Text color: #343434;
+Grey bg: #F8F8F8;
+*/
+
+
+/********** General *************/
+.space { /* Space between sub-sections*/
+    margin-top: 6%;
+    margin-bottom: 6%
+}
+
+.sumup{ /*Background for summary sections */
+    background-color: #0C0093;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#process, #phase01, #phase02, #phase03, #phase04, #phase05, #phase06, .section-wrapper { /*Spacing for sections*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+li{
+    list-style-type: disc;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem; /*18px;*/
+    line-height: 30px;
+    margin-left: -20px;
+}
+
+/*********** Setting Intro **********/
+
+#sh-intro{
+    padding-top: 5%;
+    height: 100vh;
+}
+
+.sh-intro-flex-grid{
+    padding-bottom: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.sh-intro-left{
+    flex-grow: 1;     
+    flex-basis: 50%;
+    min-width: 280px;
+}
+
+.sh-intro-right{
+    flex-grow: 1;
+    flex-basis: 50%;
+    min-width: 280px;
+}
+
+.project-cta {
+    margin-top: 24px;
+}
+
+.project-cta .button{
+    max-width: 210px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+
+/********* Setting Project Description *********/
+
+#prj-description{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.prj-flex-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6em;
+}
+
+.prj-left-col{
+    flex-grow: 2;     
+    flex-basis: 50%;
+    min-width: 280px;
+    padding-right: 3%;
+}
+
+.prj-right-col{
+    flex-grow: 2;
+    flex-basis: 50%;
+    min-width: 280px;
+}
+
+.prj-right-col-2{
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+.prj-right-col-2-left{
+    min-width: 200px;
+}
+
+.prj-goal{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+/*********** Setting Challenge **********/
+
+#challenge{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #F8F8F8;
+}
+
+.table-flex-grid{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 33%;
+}
+
+.table-item{
+    width:300px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+li.challenge, li.nr{
+    list-style-type: none;
+}
+
+.nr{
+    font-size: 50px;
+    text-align: right;
+    font-weight: 700;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #0C0093;
+    margin-right: 50px;
+    line-height: 50px;
+}
+
+
+/********** Slides Competitor Analysis **********/
+
+.slides-wrapper{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.slideshow-container {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+}
+
+.mySlides {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;  
+    width: auto;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius:10px;
+    user-select: none;   
+    margin-top:-22px;
+    opacity: 0.5;
+}
+ 
+/* .next{
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transform: translate(-5px,-5px);
+}
+
+ .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transform: translate(5px,-5px);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #0C0093;
+}
+
+
+
+/******* 01 Sum-up Goals Research *****/
+
+.grid_2x2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.column{
+    flex-basis: 50%;    
+    width: 100%;    
+}
+.item{
+    color: white;
+    margin: 50px auto;
+    padding-left: 15px;
+    border-left: 3px solid;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 480px;
+    min-width: 300px;
+}
+
+
+/********** 02 Sum-up Goals Survey **********/
+
+.grid_1x2{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.column02{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item02{
+    color: white;
+    max-width: 480px;
+    min-width: 280px;
+    margin-right: 0px;
+    flex-basis: 50%;
+    color: white;
+    margin: 50px auto;
+    padding-left: 15px;
+    border-left: 3px solid;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+.item03{
+    margin-bottom: 10px;
+}
+
+/********* POV **********/
+.pov{
+    background: #F8F8F8;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+/********* Paper Sketches **********/
+
+.paper-sketch-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/********* Mid-fid *********/
+
+#mid-fid{
+    background:#EDEFF4;
+}
+
+.mid-fid-wrapper{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.mid-fid-item{
+    margin: 5px;
+}
+
+
+/********** Test **********/
+.quote{
+   color: white;
+    max-width: 480px;
+    min-width: 280px;
+    flex-basis: 50%;
+    color: white;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+/********* Hi-Fid *********/
+
+#hi-fid{
+    background:#EDEFF4;
+}
+
+.hi-fid-item{
+    margin: 5px;
+    max-width: 200px;
+}
+
+
+/********* Conclusion **********/
+
+#conclusion{
+    margin-top: -250px;
+}
+.row-conclusion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+
+.item-conclusion{
+    flex-basis: 50%;
+}
+
+.take-top{
+    display: block;
+    float: right;
+}
+
+/* ==============================
+Small devices (smaller than 768px)
+================================= */
+@media only screen and (max-width: 768px){
+    .paper-sketch-flex-grid_1x6{
+        display: none;
+    }
+    #sh-intro{
+        padding-top: 10%;
+        height: auto;
+        padding-bottom: 10%;
+        margin-top: 50px;
+    }   
+
+    
+    .mobile{
+        display: none;
+    }   
+    .sh-intro-right{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .mid-fid-wrapper{
+        justify-content: center;
+    }
+    .mid-fid-item, .hi-fid-item{
+        flex-shrink: 4;
+        flex-basis: 40%;
+    }
+    #conclusion{
+        margin-top: 0;
+    }
+    .item-conclusion{
+    flex-basis: 100%;
+    }
+    .take-top{
+        float:none ;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .prj-right-col-2-left{
+        flex-basis: 50%;
+        min-width: 120px;
+}
+}
+
+@media only screen and (max-width: 1023px){
+     .mobile{
+        display: none;
+    }
+        
+    #challenge{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+ 
+    #prj-description{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+/* ==============================
+Large devices (larger than 1024px)
+================================= */
+@media only screen and (min-width: 1024px) {
+    .not-mobile{
+        display: none;
+    }
+  .sh-intro-flex-grid{
+        margin-top: 50px;
+    }
+
+    
+}
+/* ==============================
+X-large devices (larger than 1440px)
+================================= */
+@media only screen and (min-width: 1440px) {
+   
+}
+/* ==============================
+Extra-large devices (Smaller than 1920px)
+================================= */
+@media only screen and (min-width: 1920px) {
+      .sh-intro-flex-grid{
+        margin-top: 0;
+    }
+  
+}
+

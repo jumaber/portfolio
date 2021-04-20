@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Júlia Marí Bernaus">
-    <title>Júlia Marí Bernaus | UX/UI Designer | Berlin</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <title>Júlia Marí Bernaus | Animation</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- Custom styles for this template go here -->
-    <link rel="stylesheet" href="../portfolio/css/normalize.css#">
-    <link rel="stylesheet" href="../portfolio/css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_sh.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,55 +32,771 @@
 <body>
     <!-- Header/Navigation -->
     <header>
-        <div class="main-nav">
-            <a class="logo" href="../portfolio/index.html">Júlia Mari Bernaus</a>
+        <div id="main-nav">
+            <div class="brackets">
+                <a class="logo" href="index.html">Júlia Mari Bernaus</a>
+            </div>
             <nav>
-                <ul>
-                    <li><a class="top-nav" href="../portfolio/index.html#work">Work</a></li>
-                    <li><a class="top-nav" href="../portfolio/index.html#about">About</a></li>
-                    <li><a class="top-nav" href="../portfolio/index.html#contact">Contact</a></li>
-                    <li><a class="top-nav" href="https://www.linkedin.com/in/juliamaribernaus/"
-                            target="_blank">LinkedIn</a></li>
-                    <li><a class="btn-nav btn-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
-                            role="button">Get in touch</a></li>
-                </ul>
+                <div class="nav">
+                    <div class="brackets">
+                        <a class="top-nav" href="index.html#work">Work</a>
+                        <a class="top-nav" href="index.html#about">About</a>
+                        <a class="top-nav" href="index.html#contact">Contact</a>
+                        <a class="top-nav" href="https://www.linkedin.com/in/juliamaribernaus/"
+                            target="_blank">LinkedIn</a>
+                    </div>
+                    <a class="button-nav button-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
+                        role="button">Get in touch</a>
+                </div>
             </nav>
         </div>
-        <!--end header-->
     </header>
+        <!--end header-->
 
-    <!-- Hero -->
+    <!-- Intro -->
     <main>
+        <section id="sh-intro" class="sh-intro-flex-grid container">
+            <!--Open Intro-->
+            <div class="sh-intro-left">
+                <!--Open Right Column-->
+                <h2>Shore</h2>
+                <!--Open Text on Right Column-->
+                <p>In 2020, while studying UX Design at CareerFoundry, I chose to tackle this problem: to create an app with​
+                ​beautifully​​displayed​ ​and​ ​easy​ ​to​ ​understand​ ​wind,​ ​wave​ ​and​ ​weather​ ​reports,​ ​forecasts, and​
+                ​statistics​​for​​ ​water​​sports​ ​practitioners.
+                <br>
+                <br>
+                During the process, I discovered a market gap. There were no apps targeted to non-professional watersports
+                practitioners, representing 95% of the surveyed users. Additionally, I unveiled their common fear of sharks and
+                jellyfish. I decided to push the app towards these two discoveries.
+                <br>
+                <br>
+                The result is a proposition for a community-driven app with beautifully crafted UI.
+                <br>
+                <br>
+                Check out the resulting prototype here and dive deep into the process further down the page.
+                </p>
+                <!--End Text on Right Column-->
+                <div class="project-cta"><!--Open CTAs on Right Column-->
+                    <a class="button button-primary project-cta" href="#sh-hero" role="button">Keep on reading</a>
+                </div><!--End CTAs on Right Column-->
+            </div>
+            <div class="sh-intro-right mobile">
+                <iframe style="border:none;" width="400" height="700"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6dlqZW5VAW0cOEHcgxTgRD%2FShore-Prototype%3Fscaling%3Dcontain%26node-id%3D491%253A5176"
+                    allowfullscreen></iframe>
+            </div>
+                <div class=" sh-intro-right not-mobile">
+                    <picture>
+                        <!--Open Intro Image-->
+                        <source srcset="img/home/shore.jpg" media="(max-width:767px)"><img
+                            src="img/home/shore.jpg" alt="Setting Design by Júlia Marí Bernaus">
+                    </picture>
+                </div>
+                <!--Close Left Column-->
+        </section>
+            <!--Close right column-->
+        <!--Close Intro Section-->
+
+        <!--Hero-->
+        <div class="sh-hero" id="sh-hero">
+            <picture>
+                <!--Open Hero Image-->
+                <source srcset="img/shore/sh-hero.png" media="(max-width:767px)"><img
+                    src="img/shore/sh-hero.png" alt="Shore Design by Júlia Marí Bernaus">
+            </picture>
+        </div>
+        <!--End Hero Image-->
+
+        <section id="prj-description" class="prj-flex-grid container">
+            <!--Open Project Description-->
+            <div class="prj-left-col">
+                <!--Open Left Column-->
+                <div>
+                    <h3>The App</h3>
+                    <p>This app allows the user to pick the right beaches by easily understanding weather, wind, and wave information. It also
+                    helps users stay and feel more secure in the water with shark and jellyfish spotting reports, and discover new locations
+                    and services to practice watersports.</p>
+                </div>
+                <div class="prj-goal">
+                    <h3>Project Summary</h3>
+                    <p>The goal was to create an app with​ ​beautifully​ ​displayed​ ​and​ ​easy​ ​to​ ​understand​ ​visual language for
+                    watersport aficionados, as well as to explore the full range of available UX methods while doing so. This was part of
+                    the Careerfoundry intensive course on UX design that I completed between March and August 2020.</p>
+                </div>
+            </div>
+            <!--End Left Column-->
+            <div class="prj-right-col">
+                <!--Open Right Column-->
+                <h3>My Role</h3>
+                <p>UX/UI Designer</p>
+                <br>
+                <p><span style="font-weight: 700;">Tasks:</span> Concept Development, Research, Wireframing, Prototyping, Interaction
+                    Design, Illustration, Visual Design.</p>
+                <br>
+                <div class="prj-right-col-2">
+                <div class="prj-right-col-2-left">
+                    <h3>Tools</h3>
+
+                    <p>Figma<br>
+                        Keynote<br>
+                        Usability Hub<br>
+                        Optimalsort<br>
+                        Photoshop<br>
+                        Pen & Paper<br>
+                        Post-its<br>
+                        Whiteboard<br>
+                </div>
+                <div>
+                    <br>
+                    <p>Google Forms<br>
+                    Google Drive<br>
+                    Google Docs<br>
+                    Google Sheets<br>
+                    Grammarly<br>
+                    Hemingway app<br>
+                    Adobe Premier
+                </div>
+                </div>
+            </div>
+            <!--End of Right Column-->
+        </section>
+
+        <section id="challenge">
+            <!--Open The Challenge-->
+            <div class="container container-challenge">
+                <!--Open Challenge Header-->
+                <h3>The Challenge</h3>
+                <p>How can I help beach-goers and watersports aficionados…</p>
+                <div class="table-flex-grid">
+                    <ul class="table-item">
+                        <!--Open Challenge numbers-->
+                        <li class="nr">01</li>
+                        <li class="challenge">
+                            <p>Easily understand weather, wind, wave information?</p>
+                        </li>
+                    </ul>
+                    <ul class="table-item">
+                        <li class="nr">02</li>
+                        <li class="challenge">
+                            <p>Pick the right beach tailored to their needs?</p>
+                        </li>
+                    </ul>
+                    <ul class="table-item">
+                        <li class="nr">03</li>
+                        <li class="challenge"> 
+                            <p>Feel safe when going into the water?</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Close Challenge Numbers-->
+            </div>
+            <!--End Challenge Header-->
+        </section>
+        <!--End The Challenge-->
+        <section id="process" class="container">
+            <h3>The Process</h3>
+            <p>Through the project, I implemented the Design Thinking process.</p>
+            <img src="img/shore/process.png" alt="Shore Design by Júlia Marí Bernaus">
+        </section>
+
+        <!--Hero 2-->
+        <div class="not-mobile">
+            <picture>
+                <!--Open Hero Image-->
+                <source srcset="img/shore/hero-2.png" media="(max-width:767px)"><img src="img/shore/hero-2.png"
+                    alt="Shore Design by Júlia Marí Bernaus">
+            </picture>
+        </div><!--Close Left Column-->
+
+        <div class="st-hero">
+            <picture>
+                <!--Open Hero Image-->
+                <source srcset="img/shore/hero-2.png" media="(max-width:767px)"><img src="img/shore/hero-2.png"
+                    alt="Shore Design by Júlia Marí Bernaus">
+            </picture>
+        </div>
+        <!--End Hero 2-->
+
+        <!--Open Phase 01-->
+        <section id="phase01" class="container">
+            <h2>01 Understand</h2>
+            <p>In this first phase, I dug deep into the watersports world. I analyzed the competitors and I tried to understand what
+            was motivating the watersports aficionados to use those apps and platforms. I reached out to some friends and
+            acquaintances, who gave me more information about the watersports world. This helped me understand better the market and
+            how the watersports world works.</p>
+
+            <div class="space">
+                <h3>Competitor Analysis</h3>
+                <p>I conducted a competitor analysis to understand how other apps and websites in the watersports market work and what
+                users valued the most. Where the users needs met?
+                I discovered that users’ needs were not met since all apps were specialized in particular sports and most of them are
+                not particularly well-executed. I also found out that there were many different business models and no standardized
+                system to display wind, wave, and weather information. Yet, they were all very complex and difficult to understand.
+                This analysis included competitors’ profile, marketing, and business strategy, SWOT Profile, UX/UI, content, design, and
+                performance quality. Based on the analysis, I drew up several core features that defined Shore’s MVP.</p>
+            </div>
+            <div class="slides-wrapper">
+                <div class="slideshow-container">
+                    <div class="mySlides"><img src="img/shore/comp-analysis_1.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <div class="mySlides"><img src="img/shore/comp-analysis_2.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <div class="mySlides"><img src="img/shore/comp-analysis_3.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <div class="mySlides"><img src="img/shore/comp-analysis_4.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <div class="mySlides"><img src="img/shore/comp-analysis_5.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <div class="mySlides"><img src="img/shore/comp-analysis_6.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <div class="mySlides"><img src="img/shore/comp-analysis_7.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                    <!-- Next and previous buttons -->
+                    <div class="slide-nav">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </section>
+        <div class="sumup">
+            <div class="grid_2x2 container"> 
+                <div class="column">
+                    <div class="item">
+                        <h4>Business Goals</h4>
+                        <p>An app that enables users to find tailored beaches to their needs, see and report dangerous water conditions.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Function Overview</h4>
+                        <p>– Easy to understand forecasts.<br>
+                        – Search for nearby locations & activities.<br>
+                        – Reporting dangerous water conditions.</p>
+                    </div>
+                </div>
+                <div class ="column">
+                    <div class="item">
+                        <h4>Target Market</h4>
+                        <p>Watersports aficionados level beginner and intermediate, ages 16-65, and mobile phone proficient.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Opportunity</h4>
+                        <p>An aesthetic and easy to read and understand app for beginner and intermediate level watersports aficionados.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--End Phase 01-->
+
+        <!--Open Phase 02-->
+            <section id="phase02" class="container">
+                <h2>02 Observe</h2>
+                <p>I surveyed 130 potential users combined with 5 interviews from my personal network. I aimed to collect both quantitative
+                and qualitative data to validate/invalidate Shore’s provisional core features. I also wanted to discover which data was
+                truly useful to my target users to practice watersports and go to the beach.</p>
+            
+                <div class="space">
+                    <h3>User Survey</h3>
+                    <p>Using Google Forms and a bilingual survey (Spanish, English), I found out that most users have a beginner or
+                    intermediate level and that they don’t need a lot of information to make the call. Besides, as I had already
+                    hypothesized, the fluidity between beach-goers and watersports aficionados was very high. Additionally, I discovered
+                    that over 90% of the users had extreme jellyfish and sharks fear, and that would wish to be warned about sightings and
+                    would participate in warning others.</p>
+                    <a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSf9vDweoZf7DXEq-5jz2Bh04coS6yIWGyUAII8YPbPy8g3xMQ/viewform" target="_blank"
+                    role="button">Check the Survey!</a>
+                </div>
+            </section>
+
+        <div class="sumup">
+            <div class="grid_1x2 container"> 
+                <div class="column02">
+                    <div class="item02">
+                        <h4>Goal #1: Define Target Audience</h4>
+                        <p>Find out if the assumption that a segment of the population with a beginner or intermediate level needs a simple,
+                        accessible, and reliable solution to practice watersports, is true.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Goal #2: Determine Features</h4>
+                        <p>To know what information and features are truly useful for our target user to practice watersports.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="section-wrapper container">
+            <div class="column02 space">
+                <div class="item03">
+                    <img src="img/shore/survey1.png" alt="Shore Design by Júlia Marí Bernaus">
+                </div>
+                <div class="item03">
+                    <img src="img/shore/survey2.png" alt="Shore Design by Júlia Marí Bernaus">
+                </div>
+            <div class="column02 space">
+                <div class="item03">
+                    <img src="img/shore/survey3.png" alt="Shore Design by Júlia Marí Bernaus">
+                </div>
+                <div class="item03">
+                    <img src="img/shore/survey4.png" alt="Shore Design by Júlia Marí Bernaus">
+                </div>
+            </div>
+            <div class="space">
+                <img src="img/shore/survey5.png" alt="Shore Design by Júlia Marí Bernaus">
+            </div>
+            <p>With this information I concluded the following:</p>
+            <ul>
+                <li>Professional watersports practitioners have specific apps for each sport, with complicated data. But there is a huge gap in the market for regular people who just want to practice a fun activity in the water while at the beach.</li>
+                <li>As I had already hypothesized, the fluidity between beach-goers and watersports aficionados was very high. Thus, the app had to take a less professional direction and aim at the general public.</li>
+                <li>A key feature of the app would be to add jellyfish and sharks spotting reports. I asked myself, would they like to collaborate in warning others?</li>
+                <li>It is not necessary to show very complicated weather, wind, and wave data for users to make the call.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sumup">
+        <div class="container space">
+            <h4>Survey Key Findings</h4>
+            <p>Most users...</p>
+            <div class="column02">
+                <div class="item02">
+                    <ul>
+                        <li>Practiced watersports at least twice a year.</li>
+                        <li>Have a beginner or intermediate level.</li>
+                        <li>Don’t need a lot of information to make the call.</li>
+                    </ul>
+                </div>
+                <div class="item02">
+                    <ul>
+                        <li>Want to know about nearby services and locations.</li>
+                        <li>Are terrified of jellyfish and sharks.</li>
+                        <li>Take the decision to practice watersports spontaneously.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div><!--End Phase 01-->
+        <section id="phase0202" class="container">
+            <div class="space">
+                <h3>User Interview & Analyzing the Data</h3>
+                <p>Having run a successful survey previously smoothed the path for better interviews. I used the interviews to dig deeper
+                into the feelings and emotions of the users, understand better the lifestyle of people who practiced watersports and
+                unveil potential business possibilities.
+                <br>
+                <br>
+                During these interviews, I confirmed the will of users to collaborate in warning others. Another key aspect was to
+                understand the feeling the app would have to communicate. Watersports are for many users a fun but particularly calming
+                and fulfilling experience. Many people want to be in touch with nature and enjoy the feeling of lightness and serenity
+                inside the water. This helped me to start defining the tone, and emotions to communicate through the UI.
+                <br>
+                <br>
+                I carefully analyzed all the data by creating Empathy Maps and Affinity Mapping. I divided the information in “App
+                Features” and for each of them wrote down the findings, insights, and possible solutions.</p>
+            </div>
+            <img src="img/shore/empathy_maps.png" alt="Shore Design by Júlia Marí Bernaus">
+            <div class="space">
+                <p>At this point, I took two very important decisions:</p>
+                <ul>
+                    <li>I decided to name the app Shore because it was not anymore only about the water, but also the beach.</li>
+                    <li>It was not going to be a responsive web app, but a native app and a responsive website with different functionalities
+                    than the app.</li>
+                </ul>
+                <p>These are the main reasons why I decided on a native app:</p>
+                <ul>
+                    <li>The app would be used in-situ, and native apps offer a better experience on the phone.</li>
+                    <li>Despite progressive web apps being a quick, cheap, and more efficient solution, users still don’t know how to install a
+                    progressive web app and might feel confused about it. Being an app that needs to grow and create awareness, a native app
+                    serves a better purpose.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="sumup">
+            <div class="container space">
+                <h4>Shore’s Features</h4>
+                <p>After the surveys and the interviews, I could define much better the core features of the app:</p>
+                <div class="column02">
+                    <div class="item02">
+                        <h4>Easy</h4>
+                        <p>A smooth user experience that displays information in an aesthetic, simple, and accessible way, and drives users to
+                        discover new shores & watersport activities.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Efficient</h4>
+                        <p>Discovery and filtered search to tailor the user’s specific interests.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Helpful</h4>
+                        <p>Display on each location the nearby locations, food & drinks, watersports rentals, and watersport school services.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Reliable</h4>
+                        <p>Jellyfish spottings notifications and reporting features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Open Phase 03-->
+        <section id="phase03" class="container">
+            <h2>03 POV</h2>
+            <p>Based on the results of the survey and interviews, I created 3 personas and 2 user journeys to guide design decisions,
+            priorities, and develop empathy with potential users. While I was creating these documents, I realized that I needed
+            some more information. It was tempting to imagine what the users would say, but I decided to contact the interviewees
+            again and ask them a new round of questions regarding their behavior with digital products.</p>
+        </section>
+        <div class="pov">
+            <div class="container">
+            <h3 class="space">User Personas</h3>
+            <img src="img/shore/personas.png" alt="Shore Design by Júlia Marí Bernaus">
+            </div>
+            <div class="container">
+                <h3 class="space">User Journeys</h3>
+                <img src="img/shore/journey.png" alt="Shore Design by Júlia Marí Bernaus">
+            </div>
+            <div class="container">
+                <h3 class="space">Task Analysis & User Flows</h3>
+                <img src="img/shore/task.png" alt="Shore Design by Júlia Marí Bernaus">
+            </div>
+        </div>
+
+        <!--Open Phase 04-->
+        <section id="phase04" class="container">
+            <h2>04 Ideate</h2>
+            <p>At this point, the concept was becoming clearer. However, I needed to embody the ideas in sketches to visualize the
+            concepts and see if they made sense. By creating a Sitemap and running a Card Sorting Test, I could conceptualize better
+            the Information Architecture of the app.</p>
+        
+            <div class="space">
+                <h3>Card Sorting</h3>
+                <p>This was one of the most exciting parts of the whole process. I prepared cards using the online software Optimalsort and
+                had 8 people sort them. It was very interesting to see how despite people think in different ways, there are tendencies
+                in concept grouping. After analyzing the results, had to change some of the previous navigation for the better.</p>
+                <img src="img/shore/cardsorting.png" alt="Shore Design by Júlia Marí Bernaus">
+            </div>
+        </section>
+        
+        <div class="sumup">
+            <div class="container space">
+                <h4>Card Sorting Key Findings</h4>
+                <ul>
+                    <li>“Nearby locations” was not related to “Explore”.</li>
+                    <li>The feature to “Report a Jellyfish spotting” belongs to each location’s detailed view.</li>
+                    <li>“My Reviews” and “My Spotting Reports” belong together within the profile.</li>    
+                </ul>
+            </div>
+        </div>
+
+        <div class="container space">
+            <h3>Sitemap</h3>
+            <p>At this point, I adapted the sitemap according to my findings.</p>
+            <img class="space" src="img/shore/sitemap.png" alt="Shore Design by Júlia Marí Bernaus">
+        </div>
+        <div class="container space">
+            <h3>Paper Sketches</h3>
+            <p>After card sorting, I had to sketch again the wireframes. I printed wireframe templates and started drawing each of the
+            3 core features: Find nearby beaches, Report Jellyfish and Sharks, Explore and discover an area.</p>
+            <div class="paper-sketch-wrapper">
+                <img class="space" src="img/shore/papersketch1.png" alt="Shore Design by Júlia Marí Bernaus">
+                <img class="space" src="img/shore/papersketch2.png" alt="Shore Design by Júlia Marí Bernaus">
+            </div>
+        </div>
+        <!--Hero-->
+        <div class="sh-hero">
+            <picture>
+                <!--Open Hero Image-->
+                <source srcset="img/shore/hero-3.png" media="(max-width:767px)"><img src="img/shore/hero-3.png"
+                    alt="Shore Design by Júlia Marí Bernaus">
+            </picture>
+        </div>
+        <!--End Hero Image-->
+
+    <!--Phase 05-->
+    <section id="phase05" class="container">
+        <h2 class="space">05 Prototype</h2>
+        <p>After many quick sketches, I was finally satisfied with the navigation. I moved on to wireframing the native app and a
+        responsive desktop version on Figma. Designing with software instead of paper, helped me deal with smaller details and
+        fitting problems, as well as finding the right transitions between pages. I decided to follow the Material Design
+        guidelines, a grid system, and a mobile-first approach.</p>
+        <a class="button button-primary space" href="https://www.figma.com/proto/Uucc2Tvb4jPVy7JA6WSvhO/3.9-Mid-fidelity-Prototype_v2?node-id=491%3A3718&viewport=201%2C292%2C0.08994334191083908&scaling=scale-down" target="_blank" role="button"> Mid-fidelity prototype</a>
+    </section>
+    <div id="mid-fid">
+        <div class="mid-fid-wrapper container">
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-1.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-2.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-3.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-4.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-5.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-6.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-7.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-8.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-9.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-10.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-11.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-12.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-13.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-14.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-15.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-16.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-17.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-18.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-19.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-20.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-21.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-22.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+            <div class="mid-fid-item"><img src="img/shore/mid-fid-23.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+        </div>
+    </div>
+
+    <section id="phase06" class="container">
+        <div class="space">
+            <h2>06 Test</h2>
+            <p>After days of wireframing, I was very curious to see how testers would use the app and what I would find out. I consider
+            this one of the most crucial moments of a UX Design process, and I think, that I should have conducted early-stage tests
+            with low-fidelity prototypes. It would have saved me a lot of time and doubts to test more and earlier.</p>
+            <br>
+            <h3>Usability Test</h3>
+            <p>I conducted within 3 days, 6 moderated remote usability tests with potential users. The testers had similar
+            characteristics to the user personas.
+            <br>
+            <br>
+            Using Zoom, I asked the testers to follow specific tasks and describe to me what they were expecting, thinking, seeing,
+            and feeling. I found out that testers found it difficult to report jellyfish or shark spottings. Yet, most of the issues
+            were rather aesthetic or minor usability issues, and that the app was easy to understand and use.
+            <br>
+            <br>
+            After the sessions, I watched every test I had recorded and wrote down each expectation, action, feeling, and thought on
+            post-its. I created an affinity map and a rainbow spreadsheet.</p>
+            <a class="button button-primary space"
+                href="https://docs.google.com/spreadsheets/d/1qzwH64nIEHWie9zlHM71nmd6YtwWfwStoBpBDBfGMm0/edit?usp=sharing"
+                target="_blank" role="button"> Rainbow Spreadhseet</a>
+        </div>
+    </section>
+
+    <!--Hero-->
+    <div class="sh-hero">
+        <picture>
+            <!--Open Hero Image-->
+            <source srcset="img/shore/affinitymap.png" media="(max-width:767px)"><img src="img/shore/affinitymap.png"
+                alt="Shore Design by Júlia Marí Bernaus">
+        </picture>
+    </div>
+    <!--End Hero Image-->
+
+    <div class="sumup">
+        <div class="container space">
+            <h4>Usability Test Key Findings</h4>
+            <ul>
+                <li>Substitute the icons on the cards on the Home “Nearby” page by bullets following a streetlight color system. To support
+                color blindness, the bullets would be accompanied by words.</li>
+                <li>Add a FAB on each location’s detailed view to have better access to reporting spottings.</li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="space container">
+            <h3>Preference Test</h3>
+            <p>I conducted a first preference test that had too many variables in the design. Despite the variables overload, I
+            received interesting answers that helped me make good decisions. I noticed that this approach didn’t work and I decided
+            to run a new preference test with just one variable, to determine the best icon for the “Report a spotting” FAB.
+            <br>
+            <br>
+            Since the jellyfish and shark fear is such a sensitive topic, I wanted to avoid the feeling of alarm on every single
+            page. An alarm icon with a red button would have been more obvious, but I was convinced, that it would transport a
+            negative feeling to the whole app. My goal was that users felt safe, not alarmed! I offered testers 3 options that did
+            not transport the feeling of warning or fear. The “eye” icon won by 75% over the “bell” and the “plus” icon.</p>
+            <a class="button button-primary space"
+                href="https://docs.google.com/spreadsheets/d/1qzwH64nIEHWie9zlHM71nmd6YtwWfwStoBpBDBfGMm0/edit?usp=sharing"
+                target="_blank" role="button"> Rainbow Spreadhseet</a>
+            <img src="img/shore/preferencetest.png" alt="Shore Design by Júlia Mari Bernaus">
+            <img src="img/shore/preferencetest2.png" alt="Shore Design by Júlia Mari Bernaus">
+        </div>
+
+        <div class="sumup">
+            <div class="container">
+                <div class="column02">
+                    <div class="quote">
+                        <h5>"It fits best the action as its an observation, an eye makes sense to me."</h5>
+                    </div>
+                    <div class="quote">
+                        <h5>"Eye and “spotting” make sense."</h5>
+                    </div>
+                    <div class="quote">
+                        <h5>"I understand “take care” or “look at…”."</h5>
+                    </div>
+                    <div class="quote">
+                        <h5>"Because the eye icon to me means “need to report a sighting”."</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="phase07" class="container">
+            <div class="space">
+                <h2>07 Visual Design</h2>
+                <p>At this point, I had to transport all my learnings into visual communication and ensure the consistency of the design. I
+                enjoyed the challenges of creating illustrations, finding accessible colors that would make a beautiful color palette,
+                developing a universally understood visual language system for the location and weather cards, and determining the right
+                transitions between pages with animations.</p>
+            </div>
+        </section>
+
+        <div class="sumup">
+            <div class="container">
+                <div class="column02">
+                    <div class="item02">
+                        <h4>Goal #1</h4>
+                        <p>Transmit the emotions that users have when at the beach and practicing watersports.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Goal #2</h4>
+                        <p>Find out an easy to read way top display big amounts of complex information.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Goal #3</h4>
+                        <p>Achieve a universally understood visual language system to explain weather, wind, and wave forecasts.</p>
+                    </div>
+                    <div class="item02">
+                        <h4>Goal #4</h4>
+                        <p>Ensure that other designers can follow the design style and use the elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space container">
+            <h3>Color Palette</h3>
+            <p>I chose a modern but trustworthy color combination of turquoise and dark blue. The goal with these colors was to ensure
+            enough color contrast and transmit the right emotions.
+            <br>
+            <br>
+            Shore touches a sensitive subject related to fear – reporting spottings of jellyfish and sharks. I think it is important
+            to communicate the feelings of serenity and freshness with turquoise, and reliability with dark blue.
+            <br>
+            <br>
+            Regarding the Home Cards, I decided to use a universally understood color system: green, amber, and red.
+            </p>
+            <br>
+            <img src="img/shore/color1.png" alt="Shore Design by Júlia Mari Bernaus">
+        </div>
+        <div class="space container">
+            <h3 class="space">Color Palette</h3>
+            <img src="img/shore/color2.png" alt="Shore Design by Júlia Mari Bernaus">
+        </div>
+        <div class="space container">
+            <h3>Typeface</h3>
+            <br>
+            <p>I chose to use only one font, a sans-serif that would be easy to read on digital displays.</p>
+            <img src="img/shore/typo.png" alt="Shore Design by Júlia Mari Bernaus">
+        </div>
+        <section id="final">
+            <div class="container space">
+                <h2>Final Design</h2>
+                <p>After many UI iterations, I reached this point. However, this is only the beginning of Shore. There are plenty more
+                rounds to come after more usability test rounds.</p>
+            </div>
+        </section>
+        <div id="hi-fid">
+            <div class="mid-fid-wrapper container">
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid1.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid2.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid3.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid4.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid5.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid6.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid7.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid8.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid9.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid10.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid11.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid12.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid13.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid14.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid15.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid16.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid17.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid18.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid19.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid20.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid21.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid22.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid23.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid24.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid25.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid26.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid27.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid28.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid29.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid30.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid31.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid32.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid33.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid34.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid35.png" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid36.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+                <div class="hi-fid-item"><img src="img/shore/hi-fid/hi-fid37.jpeg" alt="Shore Design by Júlia Marí Bernaus"></div>
+            </div>
+        </div>
+        <section id="conclusion">
+            <div class="container space row-conclusion">
+                <div class="item-conclusion">
+                    <h2>Conclusion</h2>
+                    <p>This project allowed me to dive deep into UX Design and complement my previous product design experience. I learned
+                    extensively about how to design having the user in mind and it’s given me a different and valuable perspective. It was a
+                    long and challenging journey in which I appreciated seeing the project evolve with each new piece of data and enjoyed
+                    each one of the parts equally. But this is just the beginning of my life as an Experience Designer and still have a long
+                    way to go. I am ready to set out for the next journey!</p>
+                </div>
+                <div class="item-conclusion">
+                    <img src="img/shore/conclusion.png" alt="Shore Design by Júlia Marí Bernaus">
+                </div>
+            </div>
+            <div class="container space">
+                <h3>What I learned</h3>
+                <br>
+                <ul>
+                    <li>The more time you invest in the first phases of the project, the easier designing the interface and the final product
+                    will be.</li>
+                    <li>Early testing is crucial to discovering important design flaws and save money and time further down the line.</li>
+                    <li>Create excellent pixel-perfect mid-fidelity prototypes, it will help to achieve a great UI.</li>
+                    <li>An accessible color palette is difficult to find, but not impossible.</li>
+                    <li>Don’t fall in love with your design, fall in love with the problem.</li>
+                    <li>Stay humble: listen, observe, and change the product to the users’ needs – the product is for them, not for you.</li>
+                    <li>Two sets of eyes are better than one – when in doubt, ask your colleagues!</li>
+                </ul>
+                    <div class="space"><a class="button button-primary take-top" role="button" href="#sh-intro">Take me to the top</a></div>
+            </div>
+        </section>
+        <div class="sh-footer">
+            <img src="img/shore/footer.png" alt="Shore Design by Júlia Marí Bernaus">
+        </div>
     </main>
 
     <!-- Footer  -->
     <footer>
-
-        <!--Contact-->
-        <div class="container-contact" id="contact">
-            <div class="contact-wrapper">
-                <h3>Did you like my work?</h3>
-                <div class="contact-buttons">
-                    <div><a class="btn btn-primary contact-button" href="mailto:hi@juliamaribernaus.com" target="_blank"
-                            role="button">Shoot me an email</a></div>
-                    <div><a class="btn btn-secondary contact-button"
-                            href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank" role="button">Connect
-                            on LinkedIn</a></div>
-                </div>
+        <section id="contact" class="contact">
+            <!--Open Contact-->
+            <h3>Did you like my work?</h3>
+            <div class="contact-button-wrapper">
+                <a class="button button-primary contact-button left" href="mailto:hi@juliamaribernaus.com" target="_blank"
+                    role="button">Shoot me an email</a>
+                <a class="button button-secondary contact-button right" href="https://www.linkedin.com/in/juliamaribernaus/"
+                    target="_blank" role="button">Connect on LinkedIn</a>
             </div>
-        </div>
+        </section>
         <!--end of contact-->
-
-        <div class="footer">
-            <div>
-                <h6>©2021 All rights reserved</h6>
-                <a href="../portfolio/imprint.html" target="_blank">
-                    <h6>Imprint</h6>
-                </a>
-            </div>
+    
+        <div class="imprint">
+            <!--Open Imprint-->
+            <h6>©2021 All rights reserved</h6>
+            <a href="imprint.html" target="_blank">
+                <h6>Imprint</h6>
+            </a>
         </div>
+        <!--End Imprint-->
     </footer>
     <!--end of footer-->
-</body>
 
-</html>
+    <script src="js/scripts.js"></script>
+
+    </body>    
+    </html>

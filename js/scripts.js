@@ -29,6 +29,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+
 /* Read More button on About that displays the rest of the text */
 
 function ReadMore() {
