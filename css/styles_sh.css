@@ -57,13 +57,13 @@ li{
 
 .sh-intro-left{
     flex-grow: 1;     
-    flex-basis: 50%;
+    flex-basis: 60%;
     min-width: 280px;
 }
 
 .sh-intro-right{
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 40%;
     min-width: 280px;
 }
 
