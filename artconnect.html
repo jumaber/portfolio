@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Júlia Marí Bernaus">
-    <link href="../portfolio/img/favicon.ico" rel="shortcut icon">
+    <link href="img/favicon.ico" rel="shortcut icon">
     <title>Júlia Marí Bernaus | UX/UI Designer | Berlin</title>
 
     <!-- Bootstrap core CSS -->
@@ -14,8 +14,13 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- Custom styles for this template go here -->
-    <link rel="stylesheet" href="../portfolio/css/normalize.css#">
-    <link rel="stylesheet" href="../portfolio/css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css#">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_st.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,41 +33,46 @@
 <body>
     <!-- Header/Navigation -->
     <header>
-        <div class="main-nav">
-            <a class="logo" href="../portfolio/index.html">Júlia Mari Bernaus</a>
+        <div id="main-nav">
+            <div class="brackets">
+                <a class="logo" href="index.html">Júlia Mari Bernaus</a>
+            </div>
             <nav>
-                <ul>
-                    <li><a class="top-nav" href="../portfolio/index.html#work">Work</a></li>
-                    <li><a class="top-nav" href="../portfolio/index.html#about">About</a></li>
-                    <li><a class="top-nav" href="../portfolio/index.html#contact">Contact</a></li>
-                    <li><a class="top-nav" href="https://www.linkedin.com/in/juliamaribernaus/"
-                            target="_blank">LinkedIn</a></li>
-                    <li><a class="btn-nav btn-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
-                            role="button">Get in touch</a></li>
-                </ul>
+                <div class="nav">
+                    <div class="brackets">
+                        <a class="top-nav d-none d-md-block" href="index.html#work">Work</a>
+                        <a class="top-nav d-none d-md-block" href="index.html#about">About</a>
+                        <a class="top-nav d-none d-md-block" href="index.html#contact">Contact</a>
+                        <a class="top-nav d-none d-md-block " href="https://www.linkedin.com/in/juliamaribernaus/"
+                            target="_blank">LinkedIn</a>
+                    </div>
+                    <a class="button-nav button-outline-secondary" href="mailto:hi@juliamaribernaus.com" target="_blank"
+                        role="button">Get in touch</a>
+                </div>
             </nav>
         </div>
         <!--end header-->
     </header>
 
-    <!-- Hero -->
+    <!-- Intro -->
     <main>
+       <h1 style="text-align: center; height: 100vh; margin: 0 auto; padding-top: 25%; background-color: aliceblue;">Coming Soon</h1>
     </main>
-
     <!-- Footer  -->
     <footer>
         <section id="contact" class="contact">
             <!--Open Contact-->
             <h3>Did you like my work?</h3>
             <div class="contact-button-wrapper">
-                <a class="button button-primary contact-button left" href="mailto:hi@juliamaribernaus.com" target="_blank"
-                    role="button">Shoot me an email</a>
-                <a class="button button-secondary contact-button right" href="https://www.linkedin.com/in/juliamaribernaus/"
-                    target="_blank" role="button">Connect on LinkedIn</a>
+                <a class="button button-primary contact-button left" href="mailto:hi@juliamaribernaus.com"
+                    target="_blank" role="button">Shoot me an email</a>
+                <a class="button button-secondary contact-button right"
+                    href="https://www.linkedin.com/in/juliamaribernaus/" target="_blank" role="button">Connect on
+                    LinkedIn</a>
             </div>
         </section>
         <!--end of contact-->
-    
+
         <div class="imprint">
             <!--Open Imprint-->
             <h6>©2021 All rights reserved</h6>
@@ -73,6 +83,7 @@
         <!--End Imprint-->
     </footer>
     <!--end of footer-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
