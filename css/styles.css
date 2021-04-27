@@ -470,6 +470,44 @@ a.logo:hover{
     background-color: #FFA7A7;
 }
 
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    min-height: 200px;
+}
+
+.project-title{
+    margin-bottom: 20px;
+}
+.project-label{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    width: 100%;
+    color: #333;
+}
+
+.label-big {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    flex-basis: 25%;
+}
+
+.label-role{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    flex-basis: 72%;
+}
+
+
 .white-background img{
     background:white;
 }
@@ -534,40 +572,6 @@ a.logo:hover{
 
 .image__overlay:hover > * {
     transform: translateY(0px);
-}
-
-.project-content{
-    display: flex;
-    flex-direction: column;
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
-    min-height: 200px;
-}
-
-.project-title{
-    margin-bottom: 20px;
-}
-.project-label{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    color: #333;
-}
-
-.label-big {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    flex-basis: 25%;
-}
-
-.label-role{
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    flex-basis: 72%;
 }
 
 
@@ -878,14 +882,17 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (max-width: 1024px) {
 
-    .project-content{
-        min-height: 250px;
+   .project-content{
+      min-height: 330px;
     }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (max-width: 1440px) {
+      .project-content{
+      min-height: 330px;
+    }
   
 }
 
