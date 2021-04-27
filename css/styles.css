@@ -911,7 +911,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (max-width: 1440px) {
       .project-content{
-      min-height: 330px;
+      min-height: 250px;
     }
   
 }
