@@ -169,6 +169,31 @@ main{
 
 /********** Buttons **********/
 
+
+#top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;}
+
+.top-button {
+    display: inline-block;
+    font-weight: 700;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-color: #0C0093;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 1.875rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
 .button-nav {
     display: inline-block;
     font-weight: 700;
@@ -701,6 +726,7 @@ a.logo:hover{
     flex-basis: 50%;
 }   
 
+
 /********** Footer **********/
 
 
@@ -794,9 +820,7 @@ Small devices // Smaller than iPad (768px and smaller)
     .text h4, .text h5{
         padding-left: 24px;
         padding-right: 24px;
-
     }
-
 
     p.label-role{
         font-size: 0.85rem;
