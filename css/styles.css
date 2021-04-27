@@ -448,6 +448,9 @@ a.logo:hover{
 }
 
 .project{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     background-color: white;
     color: #333333;
     border-radius: 10px;
@@ -457,7 +460,7 @@ a.logo:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
+    min-height: 550px;
 }
 
 .project:hover img{

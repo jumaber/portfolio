@@ -253,7 +253,7 @@ li p{
 }
 
 .typo-container{
-    margin-left: 12%;
+    margin-left: 6%;
 }
 
 ::-webkit-scrollbar{
@@ -531,36 +531,36 @@ Small devices // Smaller than iPad (768px and smaller)
 Large devices (smaller than 1024px)
 ================================= */
 @media only screen and (max-width: 1024px) {
-#lp-intro{
-    padding-top: 10%;
-    height: auto;
-    padding-bottom: 10%;
+    #lp-intro{
+        padding-top: 10%;
+        height: auto;
+        padding-bottom: 10%;
+        }
+
+    #challenge{
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
-#challenge{
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
 
-
-#design-system h2 {
-    color:#f1f1f1;
-    padding-top: 10%;
-    padding-bottom: 0%;
-}
-.ds-group h3{
-    margin-bottom: 0px;    
-}  
-    .typo-container{
-    margin-left: 12%;
-}
+    #design-system h2 {
+        color:#f1f1f1;
+        padding-top: 10%;
+        padding-bottom: 0%;
+    }
+    .ds-group h3{
+        margin-bottom: 0px;    
+    }  
+        .typo-container{
+        margin-left: 12%;
+    }
 }
 /* ==============================
 X-large devices (smaller than 1440px)
 ================================= */
 @media only screen and (min-width: 1440px) {
     .typo-container{
-    margin-left: 21%;
+    margin-left: 12%;
 }
 }
 
