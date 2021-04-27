@@ -26,6 +26,44 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+function enableSwipe() {
+  console.log('enable swipe called');
+  var containerElement = document.querySelector('.slideshow-container');
+  var activeRegion = ZingTouch.Region(containerElement);
+  var childElement = document.querySelector('.mySlides.current');
+
+  activeRegion.bind(childElement, 'swipe', function(e){
+      //Perform Operations
+      const angle = e.detail.data[0].currentDirection;
+      console.log('e.detail.data[0].currentDirection --->', e.detail.data[0].currentDirection)
+      if ((angle >= 315 && angle <= 360) || (angle <= 45 && angle >= 0)) {
+      console.log("swipe right");
+      plusSlides(1);
+      (e.detail.events).forEach(_e => _e.originalEvent.preventDefault());
+      return;
+    }
+    else if (angle >= 135 && angle <= 225) {
+      console.log("swipe left");
+      plusSlides(-1);
+      (e.detail.events).forEach(_e => _e.originalEvent.preventDefault());
+      return;
+    }
+    else if (angle <= 135) {
+      console.log("swipe right with UP");
+      plusSlides(1);
+      (e.detail.events).forEach(_e => _e.originalEvent.preventDefault());
+    } else {
+      console.log("swipe right with DOWN");
+      plusSlides(-1);
+      (e.detail.events).forEach(_e => _e.originalEvent.preventDefault());
+      return;
+    }
+  });
+}
+
+// Run once page load
+enableSwipe();
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -34,12 +72,15 @@ function showSlides(n) {
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].className = "mySlides";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].className += " current";
   dots[slideIndex - 1].className += " active";
+  enableSwipe();
 }
 
 
