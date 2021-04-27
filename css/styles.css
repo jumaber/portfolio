@@ -16,14 +16,15 @@ html{
 }
 
 .name{
-    color:#FFA7A7
+    color:#FFA7A7 !important;
 }
 
 .job{
-    color:#0C0093
+    color:#0C0093;
 }
+
 .past{
-    color: #FEED50;
+    color: #f8df00;
 }
 
 /* h1, h2, h3, h4, h5, h6, .label-bold, a.logo{
@@ -34,42 +35,42 @@ html{
 } */
 
 p, .p-link, .p-small, label{
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 h1{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 2.5rem; /*40px*/
     font-weight: 700;
     line-height: 49px;
 }
 
 h2{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.875rem; /*30px*/
     line-height: 37px;
 }
 
 h3{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.5rem; /*24px*/
     line-height: 29px;
 }
 
 h4{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.125rem; /*18px*/
     line-height: 22px;
 }
 
 h5{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1rem; /*16px*/
     line-height: 20px;
 }
 
 h6{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 0.875rem; /* 14px; */
     line-height: 17px;
 }
@@ -99,7 +100,7 @@ label{
 }
 
 .label-bold{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1rem; /*16px*/
     line-height: 20px;
@@ -171,7 +172,7 @@ main{
 .button-nav {
     display: inline-block;
     font-weight: 700;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -181,13 +182,17 @@ main{
     line-height: 1.5;
     border-radius: 1.875rem;
     transition: transform 0.5s;
+    cursor: pointer;
+}
 
+.button-nav:active{
+    background-color: #FDFF92;
 }
 
 .button {
     display: inline-block;
     font-weight: 700;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -207,6 +212,10 @@ main{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+
 
 }
 
@@ -269,19 +278,21 @@ main{
 
 /********** Top Navigation Bar **********/
 
-#main-nav{
+#navbar{
     background-color: #0C0093;
     padding: 10px 20px;
     height: 60px;
     width: 100%;
-    position: fixed;
+    position: fixed; /*make it fixed*/
     top:0;
-    z-index:1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
 
 }
+
 .logo{
     display: flex;
     
@@ -298,7 +309,7 @@ nav li {
 }
 
 a.top-nav{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -323,7 +334,7 @@ a.top-nav:active{
 }
 
 a.logo{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -339,7 +350,7 @@ a.logo:hover{
     animation-duration: 1s;  */
 }
 
-.work-wrapper h3, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3{
+.work-wrapper h2, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3{
     text-align: center;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -406,13 +417,16 @@ a.logo:hover{
     padding-left: 2%;
     padding-right: 2%;
     transform: translate(0,-2px);
+    cursor: pointer;
+
 }
 
 .project{
-    background-color:#f2f2f6;
+    background-color: white;
+    color: #333333;
     border-radius: 10px;
     margin: 1%;
-    width: 45%;
+    width:30%;
     min-width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -422,20 +436,36 @@ a.logo:hover{
 
 .project:hover img{
     transform: translate(0,-2px);
-    background: black;
-    opacity: 0.4;
+    background:#FFA7A7;
+    opacity: 0.8;
     transition: opacity 0.5s;
     transition: transform 0.5s;
 }
 
+.white-background img{
+    background:white;
+}
+
 .image{
-position: relative;
-width:100%; /*change to 100%*/
+    position: relative;
+    width:100%; /*change to 100%*/
 }
 
 .image__img{
-display: block;
-width: 100%;
+    display: block;
+    width: 100%;
+}
+
+.project-content h3 a{
+    color: #0C0093;
+}
+
+.project-content h3 a:hover{
+    color: #FFA7A7;
+}
+
+.project-content h3{
+    color: #0C0093;
 }
 
 .image__overlay{
@@ -453,17 +483,17 @@ width: 100%;
 }
 
 .image__overlay--blur{
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
--moz-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
 }
 
 .image__overlay:hover{
-opacity: 1;
+    opacity: 1;
 }
 
 .image__title h2{
-color: #0C0093;
+    color: #ffffff;
 }
 
 .image__overlay > * {
@@ -476,33 +506,46 @@ color: #0C0093;
 }
 
 .project-content{
+    display: flex;
+    flex-direction: column;
     margin-top: 24px;
     margin-left: 24px;
     margin-right: 24px;
+    min-height: 200px;
 }
 
-.label-role{
-    display: inline-block;
-    margin-left: 16px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color:#343434;
+.project-title{
+    margin-bottom: 20px;
+}
+.project-label{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #333;
 }
 
 .label-big {
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    color:#343434;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
-    display: inline-block;
+    line-height: 19px;
+    flex-basis: 25%;
+}
+
+.label-role{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    flex-basis: 72%;
 }
 
 
 
 /********** About **********/
 
+/* #about{
+    min-height: 100vh;
+} */
 .container-about{
     background-color: white;
     width: 100%;
@@ -536,7 +579,6 @@ color: #0C0093;
     padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
-
 }
 
 /********* Slider Carousel **********/
@@ -572,8 +614,9 @@ color: #0C0093;
     position: absolute;
     top: 50%;  
     width: auto;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: normal;
+    font-size: 34px;
+    color: #c4c4c4 !important;
     transition: 0.6s ease;
     border-radius:10px;
     user-select: none;   
@@ -589,13 +632,13 @@ color: #0C0093;
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 5px;
     transform: translate(-5px,-5px);
 }
 
  .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.);
     padding: 5px;
     transform: translate(5px,-5px);
 }
@@ -729,20 +772,31 @@ Small devices // Smaller than iPad (768px and smaller)
         margin-bottom: 35%;
     }
 
-    .work-wrapper h3, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3 {
+    .work-wrapper h2, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3 {
         padding-top:10%;
         padding-bottom: 6%;
     }
 
-    .project p, .container-about p, .slide p{
+    .project p, .container-about p{
         font-size: 1rem;
         line-height: 28px;
     }
 
+    .text p{
+        font-size: 0.9rem;
+        line-height: 26px;
+        padding: 20px;
+    }
+
+    .text h4, .text h5{
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+
     p.label-role{
         font-size: 0.85rem;
-        line-height: 12px !important;
-
     }
 
     .label-role {
@@ -772,10 +826,20 @@ Small devices // Smaller than iPad (768px and smaller)
         }
 
     .slideshow-container {
-        height: 100%;
+    height: max-content;
     }
+    
     .next, .prev{
-        font-size: 12px;
+        font-size: 20px;
+    }
+
+    #contact{
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .project-content{
+        min-height: 320px;
     }
 }
 
@@ -783,11 +847,16 @@ Small devices // Smaller than iPad (768px and smaller)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (max-width: 1024px) {
+
+    .project-content{
+        min-height: 250px;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (max-width: 1440px) {
+  
 }
 
 /* ==============================

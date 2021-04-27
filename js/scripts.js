@@ -1,3 +1,16 @@
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-56px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
 /* Slides on About Section on Index */
 
 var slideIndex = 1;
@@ -55,3 +68,7 @@ function myFunction() {
   var y = elmnt.scrollTop;
   document.getElementById("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
 }
+
+/*let h = $("#navbar").height();
+let o = $("#work").offset();
+window.scroll(0, o.top-h);*/
