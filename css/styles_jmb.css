@@ -18,6 +18,7 @@ Grey bg: #F8F8F8;
 }
 
 .jmb-intro-flex-grid {
+    margin-top: 5%;
     padding-bottom: 6%;
     display: flex;
     align-items: center;
@@ -58,6 +59,12 @@ Grey bg: #F8F8F8;
 .project-cta .button-secondary {
     max-width: 240px;
 
+}
+
+.subheader {
+    color: #0C0093;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
