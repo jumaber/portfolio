@@ -232,6 +232,17 @@ li p{
 }
 
 
+/********* Related Projects *********/
+#related-projects {
+    background-color: #FFFFFF;
+}
+
+
+/******** Contact *********/
+#contact {
+    background-color: #f8f8f8;
+}
+
 /********* Media Queries **********/
 
 /* ==============================
