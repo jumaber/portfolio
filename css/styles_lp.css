@@ -256,14 +256,15 @@ li p{
     margin-left: 6%;
 }
 
-::-webkit-scrollbar{
+section::-webkit-scrollbar {
     width: 3px;
+    height: 1px;
 }
-::-webkit-scrollbar-track{
-  background: #212121; 
+section::-webkit-scrollbar-track {
+  background: #5f5f5f; 
 }
-::-webkit-scrollbar-thumb{
-  background: #212121; 
+section::-webkit-scrollbar-thumb {
+  background: #FEE46D;
 }
 
 
