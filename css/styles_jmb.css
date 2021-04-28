@@ -10,13 +10,14 @@ Grey bg: #F8F8F8;
 
 /*********** Setting Intro **********/
 
-#st-intro{
-  display: flex;
-  align-content: center;
-  height: 100vh;
+#jmb-intro {
+    display: flex;
+    align-content: center;
+    padding-top: 3%;
+    height: 100vh;
 }
 
-.st-intro-flex-grid{
+.jmb-intro-flex-grid {
     padding-bottom: 6%;
     display: flex;
     align-items: center;
@@ -26,13 +27,13 @@ Grey bg: #F8F8F8;
     align-content: space-between;
 }
 
-.st-intro-left{
-    flex-grow: 1;     
+.jmb-intro-left {
+    flex-grow: 1;
     flex-basis: 58%;
     min-width: 300px;
- }
+}
 
-.st-intro-right{
+.jmb-intro-right {
     flex-grow: 1;
     flex-basis: 42%;
     min-width: 300px;
@@ -47,27 +48,28 @@ Grey bg: #F8F8F8;
     align-items: center;
     max-width: 444px;
 }
-.project-cta .button{
+
+.project-cta .button {
     max-width: 240px;
     margin-bottom: 6px;
     margin-top: 6px;
 }
 
-.project-cta .button-secondary{
+.project-cta .button-secondary {
     max-width: 240px;
-    
+
 }
 
 
 /*********** Setting Challenge **********/
 
-#challenge{
+#challenge {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #F8F8F8;
 }
 
-.table-flex-grid{
+.table-flex-grid {
     margin-top: 5%;
     display: flex;
     flex-direction: row;
@@ -77,18 +79,18 @@ Grey bg: #F8F8F8;
     flex-basis: 33%;
 }
 
-.table-item{
-    width:300px;
+.table-item {
+    width: 300px;
     display: flex;
     align-items: flex-start;
 }
 
 
-li{
+li {
     list-style-type: none;
 }
 
-.nr{
+.nr {
     font-size: 50px;
     text-align: right;
     font-weight: 700;
@@ -98,26 +100,26 @@ li{
     line-height: 50px;
 }
 
-li p{
+li p {
     text-align: left;
 }
 
 
 /********* Hero *********/
 
-.st-hero{
-    width:100%;
+.jmb-hero {
+    width: 100%;
 }
 
 
 /********* Setting Project Description *********/
 
-#prj-description{
+#prj-description {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.prj-flex-grid{
+.prj-flex-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -125,20 +127,20 @@ li p{
     margin-top: 6em;
 }
 
-.prj-left-col{
-    flex-grow: 3;     
+.prj-left-col {
+    flex-grow: 3;
     flex-basis: 45%;
     min-width: 300px;
     padding-right: 3%;
 }
 
-.prj-right-col{
+.prj-right-col {
     flex-grow: 1;
     flex-basis: 55%;
     min-width: 300px;
 }
 
-.prj-left-col-2{
+.prj-left-col-2 {
     margin-top: 48px;
     display: flex;
     flex-direction: row;
@@ -146,43 +148,46 @@ li p{
     flex-flow: row nowrap;
     align-items: flex-start;
 }
-.prj-left-col-2-left{
+
+.prj-left-col-2-left {
     margin-right: 35%;
 }
 
-.prj-goal{
+.prj-goal {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-.prj-goal ul li, .prj-right-col ul li{
-    list-style-type:disc;
-    margin-left:-20px; 
+
+.prj-goal ul li,
+.prj-right-col ul li {
+    list-style-type: disc;
+    margin-left: -20px;
 }
 
 /*********** Wireframes *************/
-#wireframes{
+#wireframes {
     background-color: #F8F8F8;
 }
 
-.wireframes-flex-grid{
+.wireframes-flex-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between
 }
 
-#wireframes h3{
+#wireframes h3 {
     text-align: left;
     padding-left: 2%;
     padding-top: 5%;
 }
 
-#wireframes p{
+#wireframes p {
     text-align: left;
     padding-left: 2%;
 }
 
-.wireframe{
+.wireframe {
     display: block;
     border-radius: 10px;
     margin: 2%;
@@ -193,7 +198,7 @@ li p{
     min-width: 280px;
 }
 
-.wireframe-button{
+.wireframe-button {
     max-width: 290px;
     min-width: 280px;
     margin-top: 3%;
@@ -203,18 +208,19 @@ li p{
 
 /******* Desktop Prototype ********/
 
-#desktop-prototype{
+#desktop-prototype {
     margin-top: 5rem;
     padding-top: 5rem;
-    padding-bottom: 5rem; 
+    padding-bottom: 5rem;
     background-color: #343434;
 }
 
-#desktop-prototype h3, #desktop-prototype p{
+#desktop-prototype h3,
+#desktop-prototype p {
     color: #f1f1f1;
 }
 
-.iframe{
+.iframe {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,9 +230,9 @@ li p{
 
 /*********** Design System ***********/
 
-#design-system{
+#design-system {
     padding-top: 5rem;
-    padding-bottom: 5rem; 
+    padding-bottom: 5rem;
     background-color: #F8F8F8;
 
 }
@@ -238,39 +244,40 @@ li p{
 Small devices // Smaller than iPad (768px and smaller)
 ================================= */
 @media only screen and (max-width: 768px) {
-    .iframe-box{
+    .iframe-box {
         display: none;
-    }   
+    }
 
-    #st-intro{
+    #jmb-intro {
         padding-top: 10%;
         height: auto;
         padding-bottom: 10%;
-    }   
+    }
 
-    .mobile{
+    .mobile {
         display: none;
-    }   
+    }
 }
+
 /* ==============================
 Large devices (Smaller than 1024px)
 ================================= */
 @media only screen and (max-width: 1023px) {
-    .mobile{
+    .mobile {
         display: none;
     }
-        
-    #challenge{
+
+    #challenge {
         padding-top: 10%;
         padding-bottom: 10%;
     }
- 
-    #prj-description{
+
+    #prj-description {
         margin-top: 10%;
         margin-bottom: 10%;
     }
 
-    #wireframes{
+    #wireframes {
         padding-top: 10%;
         padding-bottom: 10%;
     }
@@ -280,19 +287,17 @@ Large devices (Smaller than 1024px)
 Large devices (larger than 1024px)
 ================================= */
 @media only screen and (min-width: 1024px) {
-    .not-mobile{
+    .not-mobile {
         display: none;
     }
 }
+
 /* ==============================
 X-large devices (larger than 1440px)
 ================================= */
-@media only screen and (min-width: 1440px) {
-   
-}
+@media only screen and (min-width: 1440px) {}
+
 /* ==============================
 Extra-large devices (Smaller than 1920px)
 ================================= */
-@media only screen and (max-width: 1920px) {
-  
-}
+@media only screen and (max-width: 1920px) {}
