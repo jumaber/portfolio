@@ -185,13 +185,23 @@ main{
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.2;
     border-color: #0C0093;
     border-width: 2px;
     background-color: white;
     border-radius: 1.875rem;
     transition: transform 0.5s;
     cursor: pointer;
+}
+
+.top-button:hover {
+    background-color: #0C0093;
+    color:white;
+    transform: translate(0,-2px);
+    transition: transform 0.25s;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .button-nav {
@@ -204,7 +214,7 @@ main{
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.3;
     border-radius: 1.875rem;
     transition: transform 0.5s;
     cursor: pointer;
@@ -239,9 +249,6 @@ main{
     -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.5s;
-
-
-
 }
 
 .button-primary {
@@ -281,7 +288,6 @@ main{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-
 }
 
 .button-secondary{
@@ -315,13 +321,12 @@ main{
     align-items: center;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     z-index: 100;
-
 }
 
 .logo{
-    display: flex;
-    
+    display: flex;   
 }
+
 .nav .brackets{
     display: flex;
     justify-content: flex-end;
@@ -340,8 +345,7 @@ a.top-nav{
     line-height: 20px;
     font-weight: 700;
     color: white;
-    padding: 0 10px;
-    
+    padding: 0 10px;   
 }
 
 a.top-nav:hover{
@@ -350,8 +354,6 @@ a.top-nav:hover{
     text-decoration-color: #FDFF92;
     text-decoration-thickness: 0.2em;
     text-underline-offset: 1.5px;
-  
-
 }
 
 a.top-nav:active{
@@ -366,7 +368,6 @@ a.logo{
     line-height: 20px;
     color: white;
     float: left;
-
 }
 
 a.logo:hover{
@@ -376,7 +377,7 @@ a.logo:hover{
     animation-duration: 1s;  */
 }
 
-.work-wrapper h2, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3{
+.work-wrapper h2, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3, #related-projects h3{
     text-align: center;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -423,6 +424,7 @@ a.logo:hover{
 .round-borders{
     border-radius: 10px 10px 0 0;
 }
+
 .work-wrapper {
     align-items: center;
     background-color: #F8F8F8;
@@ -444,7 +446,6 @@ a.logo:hover{
     padding-right: 2%;
     transform: translate(0,-2px);
     cursor: pointer;
-
 }
 
 .project{
@@ -469,7 +470,6 @@ a.logo:hover{
     transition: transform 0.5s;
 }
 
-
 .project-content{
     display: flex;
     flex-direction: column;
@@ -483,6 +483,7 @@ a.logo:hover{
 .project-title{
     margin-bottom: 20px;
 }
+
 .project-label{
     display: flex;
     flex-direction: row;
@@ -673,7 +674,7 @@ a.logo:hover{
 }
 
  .next:hover {
-    background-color: rgba(0, 0, 0, 0.);
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 5px;
     transform: translate(5px,-5px);
 }
@@ -707,6 +708,59 @@ a.logo:hover{
 .text h4{
     color: #0C0093;
 }
+
+
+/********* Related Projects ***********/
+
+#related-projects{
+    background-color: #F8F8F8;
+}
+
+.related-projects-box{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    transform: translate(0,-2px);
+    cursor: pointer;
+}
+
+.related-project{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: white;
+    color: #333333;
+    border-radius: 10px;
+    margin: 1%;
+    width: 18%;
+    /* min-width: 300px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    min-height: 320px;
+}
+
+.related-project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.related-project-title{
+    margin-bottom: 0;
+}
+
 
 
 /********** Contact in Footer **********/
@@ -743,8 +797,7 @@ a.logo:hover{
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .imprint h6{
@@ -775,8 +828,8 @@ footer .imprint-page{
 /********** Imprint Page ***********/
 
 #imprint-page{
-display: block;
-margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .imprint-inner{
@@ -808,7 +861,7 @@ Small devices // Smaller than iPad (768px and smaller)
         margin-bottom: 35%;
     }
 
-    .work-wrapper h2, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3 {
+    .work-wrapper h2, .container-about h3, .container-contact h3, #contact h3, .slides-wrapper h3, #recommendation h3, #related-projects h3 {
         padding-top:10%;
         padding-bottom: 6%;
     }
@@ -849,20 +902,19 @@ Small devices // Smaller than iPad (768px and smaller)
         background-color:rgb(255, 167, 167, 0.5);
         padding-bottom: 10px;
         border-radius: 10px 10px 0 0;
-
     }
 
     .image__overlay h2{
         font-size: 30px;
         color: white;
-
     }
+
     .image__overlay--blur{
         backdrop-filter: blur(0px);
-        }
+    }
 
     .slideshow-container {
-    height: max-content;
+        height: max-content;
     }
     
     .next, .prev{
@@ -894,24 +946,23 @@ Large devices (1024px or larger)
         background-color:rgb(255, 167, 167, 0.5);
         padding-bottom: 10px;
         border-radius: 10px 10px 0 0;
-
     }
 
     .image__overlay h2{
         font-size: 30px;
         color: white;
-
     }
+
     .image__overlay--blur{
         backdrop-filter: blur(0px);
-        }
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (max-width: 1440px) {
-      .project-content{
-      min-height: 250px;
+    .project-content{
+        min-height: 250px;
     }
   
 }
