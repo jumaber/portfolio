@@ -192,9 +192,9 @@ li p{
 .mockup{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex: 1 1 50%;
-    min-width: 320px;
+    align-items: space-between;
+    flex: 1 1 40%;
+    min-width: 300px;
 }
 
 /********* Design System **********/
@@ -555,18 +555,19 @@ Large devices (smaller than 1024px)
         margin-left: 12%;
     }
 }
-/* ==============================
-X-large devices (smaller than 1440px)
-================================= */
-@media only screen and (min-width: 1440px) {
-    .typo-container{
-    margin-left: 12%;
+
+@media only screen and (min-width: 1024px) {
+    .typo-container {
+        margin-left: 12%;
     }
 }
 
+/* ==============================
+X-large devices (smaller than 1440px)
+================================= */
 @media only screen and (max-width: 1440px) {
-    .typo-container {
-        margin-left: 12%;
+    .typo-container{
+    margin-left: 21%;
     }
 }
 
