@@ -561,8 +561,15 @@ X-large devices (smaller than 1440px)
 @media only screen and (min-width: 1440px) {
     .typo-container{
     margin-left: 12%;
+    }
 }
+
+@media only screen and (max-width: 1440px) {
+    .typo-container {
+        margin-left: 12%;
+    }
 }
+
 
 /* ==============================
 Extra-large devices (smaller than 1920px)
