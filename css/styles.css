@@ -449,7 +449,6 @@ a.logo:hover{
     padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
-    transform: translate(0,-4px); 
     cursor: pointer;
 }
 
@@ -467,10 +466,11 @@ a.logo:hover{
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     min-height: 550px;
+    transform: translate(0, -2px);
 }
 
 .project:hover img{
-    transform: translate(0,-5px);
+    transform: translate(0,-2px);
     opacity: 0.8;
     transition: transform 0.5s;
 }
@@ -510,11 +510,6 @@ a.logo:hover{
     font-size: 16px;
     line-height: 19px;
     flex-basis: 72%;
-}
-
-
-.white-background img{
-    background:white;
 }
 
 .image{
