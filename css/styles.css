@@ -797,18 +797,19 @@ a.logo:hover{
     background-color: #FDFF92;
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .imprint h6{
     text-align: center;
     color: #343434;
     font-weight: normal;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 8px;
     padding-right: 16px;
     padding-left: 16px;
 }
@@ -994,6 +995,7 @@ Small devices // Smaller than iPad (768px and smaller)
 }
 
 
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -1023,7 +1025,7 @@ Large devices (1024px or larger)
      .projects-box{
     justify-content: center;
     }
-  
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -1039,4 +1041,8 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (max-width: 1920px) {
+    .imprint{
+        flex-direction: column;
+        
+    }
 }
