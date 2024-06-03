@@ -440,12 +440,10 @@ a.logo:hover{
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
     cursor: pointer;
@@ -453,6 +451,7 @@ a.logo:hover{
 
 .project{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-content: space-between;
     background-color: white;
@@ -481,10 +480,13 @@ a.logo:hover{
     margin-top: 24px;
     margin-left: 24px;
     margin-right: 24px;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .project-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-bottom: 20px;
 }
 
@@ -492,23 +494,25 @@ a.logo:hover{
     display: flex;
     flex-direction: row;
     align-content: flex-end;
-    width: 100%;
+    margin-bottom: 24px;
     color: #333;
 }
 
-.label-big {
+.year {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    flex-basis: 25%;
+    padding-right: 8px;
 }
 
-.label-role{
+.role{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    flex-basis: 72%;
 }
 
 .image{
@@ -989,6 +993,7 @@ Small devices // Smaller than iPad (768px and smaller)
 
 }
 
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -1015,7 +1020,10 @@ Large devices (1024px or larger)
     .image__overlay--blur{
         backdrop-filter: blur(0px);
     }
-}
+     .projects-box{
+    justify-content: center;
+    }
+  
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -1024,6 +1032,7 @@ X-large devices (1440px or larger)
         min-height: 250px;
     }
   
+   
 }
 
 /* ==============================
