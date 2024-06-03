@@ -415,9 +415,8 @@ a.logo:hover{
 } */
 
 .hero-cta{
-    flex-basis: 50%;
     text-align: center;
-    max-width: 400px;
+    max-width: 800px;
     min-width: 320px;
     padding: 2%;
     margin-top: 50px;
